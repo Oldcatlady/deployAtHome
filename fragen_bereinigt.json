@@ -1,0 +1,3216 @@
+[
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist ein Use Case?",
+        "Antwortoption A": "Eine Systemrolle innerhalb des Modells",
+        "Antwortoption B": "Eine Systemklasse innerhalb des Modells",
+        "Antwortoption C": "Eine Systemregel innerhalb des Modells",
+        "Antwortoption D": "Eine Systemfunktion aus Nutzersicht",
+        "Korrekte-Antwort": [
+            "D"
+        ],
+        "Erklärung": "Ein Use Case beschreibt eine Funktionalität eines Systems aus der Sicht eines beteiligten Nutzers oder Akteurs. Dabei wird betrachtet, welches Ziel durch die Nutzung des Systems erreicht werden soll.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist ein Anwendungsfall?",
+        "Antwortoption A": "Eine festgelegte Systemregel im UML-Modell",
+        "Antwortoption B": "Eine definierte Systemklasse im UML-Modell",
+        "Antwortoption C": "Eine beschriebene Systemfunktion aus Nutzersicht",
+        "Antwortoption D": "Eine festgelegte Systemrolle im UML-Modell",
+        "Korrekte-Antwort": [
+            "C"
+        ],
+        "Erklärung": "Ein Anwendungsfall beschreibt, wie ein Akteur mit einem System interagiert, um ein bestimmtes Ziel zu erreichen. Der Begriff Anwendungsfall ist dabei die deutsche Bezeichnung für Use Case.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was beschreibt ein Use Case?",
+        "Antwortoption A": "Einen Ablauf zur Erreichung eines Nutzerziels",
+        "Antwortoption B": "Eine Struktur zur Abbildung der Systemklassen",
+        "Antwortoption C": "Eine Technik zur Verwaltung der Systemdaten",
+        "Antwortoption D": "Eine Umgebung zur Organisation von Systemen",
+        "Korrekte-Antwort": [
+            "A"
+        ],
+        "Erklärung": "Ein Use Case betrachtet einen konkreten Anwendungsablauf aus fachlicher Sicht. Im Mittelpunkt steht die Interaktion zwischen einem Akteur und dem System sowie das Ziel, das der Akteur dabei erreichen möchte.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Aus welcher Perspektive wird ein Use Case beschrieben?",
+        "Antwortoption A": "Aus Sicht eines Entwicklers des Systems",
+        "Antwortoption B": "Aus Sicht eines Nutzers des Systems",
+        "Antwortoption C": "Aus Sicht eines Betreibers des Systems",
+        "Antwortoption D": "Aus Sicht einer technischen Komponente",
+        "Korrekte-Antwort": [
+            "B"
+        ],
+        "Erklärung": "Bei einem Use Case steht die Sicht des Akteurs im Vordergrund. Beschrieben wird also, welche Funktionalität der Akteur benötigt und welches Ziel er mit der Nutzung des Systems erreichen möchte.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was versteht man unter einer Funktionalität eines Systems?",
+        "Antwortoption A": "Eine vom System verwendete technische Struktur",
+        "Antwortoption B": "Eine vom System intern gespeicherte Datenmenge",
+        "Antwortoption C": "Eine vom System erbrachte Leistung für Nutzende",
+        "Antwortoption D": "Eine vom System intern verwaltete Datenstruktur",
+        "Korrekte-Antwort": [
+            "C"
+        ],
+        "Erklärung": "Eine Funktionalität beschreibt, welche Leistung oder Aufgabe ein System für seine Nutzer bereitstellt. Funktionalitäten bilden deshalb eine wichtige Grundlage für die Beschreibung von Anforderungen an ein System.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist der Zusammenhang zwischen einem Use Case und einem Anwendungsfall?",
+        "Antwortoption A": "Sie sind inhaltlich gleichbedeutende Begriffe",
+        "Antwortoption B": "Sie sind unterschiedliche Systemrollen im Modell",
+        "Antwortoption C": "Sie sind unterschiedliche Systemtypen im Modell",
+        "Antwortoption D": "Sie bezeichnen denselben fachlichen Vorgang",
+        "Korrekte-Antwort": [
+            "A",
+            "D"
+        ],
+        "Erklärung": "Use Case und Anwendungsfall bezeichnen dasselbe Konzept. Der Begriff Use Case stammt aus dem Englischen, während Anwendungsfall die entsprechende deutsche Bezeichnung ist. Beide beschreiben eine Funktionalität aus Sicht eines Akteurs.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was stellt ein Use-Case-Diagramm grundsätzlich dar?",
+        "Antwortoption A": "Systemklassen und ihre jeweiligen Methoden",
+        "Antwortoption B": "Akteure und die angebotenen Systemfunktionen",
+        "Antwortoption C": "Nutzende und ihre möglichen Systeminteraktionen",
+        "Antwortoption D": "Systemdaten und ihre jeweiligen Tabellen",
+        "Korrekte-Antwort": [
+            "B",
+            "C"
+        ],
+        "Erklärung": "Ein Use-Case-Diagramm stellt die funktionale Sicht auf ein System dar. Es zeigt insbesondere die beteiligten Akteure, die Anwendungsfälle des Systems und deren Beziehungen zueinander. Die konkrete technische Umsetzung des Systems wird dabei nicht dargestellt.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wozu wird ein Use-Case-Diagramm verwendet?",
+        "Antwortoption A": "Zur direkten Implementierung von Programmlogik",
+        "Antwortoption B": "Zur Beschreibung funktionaler Anforderungen",
+        "Antwortoption C": "Zur Abstimmung von Systemfunktionen mit Beteiligten",
+        "Antwortoption D": "Zur Dokumentation von Akteuren und Anwendungsfällen",
+        "Korrekte-Antwort": [
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Use-Case-Diagramme helfen dabei, die funktionalen Anforderungen eines Systems übersichtlich darzustellen. Sie erleichtern außerdem die Kommunikation zwischen Beteiligten und dienen als Dokumentation der vorgesehenen Anwendungsfälle. Die eigentliche Programmlogik wird dagegen nicht im Use-Case-Diagramm implementiert.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Beziehungen werden durch ein Use-Case-Diagramm veranschaulicht?",
+        "Antwortoption A": "Beziehungen zwischen Klassen und ihren Objekten",
+        "Antwortoption B": "Beziehungen zwischen Tabellen und ihren Datensätzen",
+        "Antwortoption C": "Beziehungen zwischen Akteuren und Use Cases",
+        "Antwortoption D": "Beziehungen zwischen Akteuren und Systemfunktionen",
+        "Korrekte-Antwort": [
+            "C",
+            "D"
+        ],
+        "Erklärung": "Im Use-Case-Diagramm wird dargestellt, welche Akteure mit welchen Anwendungsfällen beziehungsweise Systemfunktionen in Beziehung stehen. Dadurch wird sichtbar, welche Funktionalitäten von welchen beteiligten Akteuren genutzt werden.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Elemente bzw. Bestandteile eines Systems können in einem Use-Case-Diagramm dargestellt werden?",
+        "Antwortoption A": "Akteure, Use Cases und Systemgrenze",
+        "Antwortoption B": "Akteure, Funktionalitäten und Systemgrenze",
+        "Antwortoption C": "Akteure, Anwendungsfälle und Systemgrenze",
+        "Antwortoption D": "Akteure, Rollen, Use Cases und Systemgrenze",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Ein Use-Case-Diagramm kann die beteiligten Akteure, die Anwendungsfälle sowie die Systemgrenze darstellen. Die Systemgrenze macht dabei deutlich, welche Funktionalitäten zum betrachteten System gehören. Beziehungen zwischen diesen Elementen verdeutlichen die Nutzung der Systemfunktionen durch die Akteure.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist ein Akteur im Kontext eines Use-Case-Diagramms?",
+        "Antwortoption A": "Eine technische Komponente des Systems",
+        "Antwortoption B": "Eine externe Einheit mit Systeminteraktion",
+        "Antwortoption C": "Eine interne Klasse des Systems",
+        "Antwortoption D": "Eine gespeicherte Informationseinheit des Systems",
+        "Korrekte-Antwort": [
+            "B"
+        ],
+        "Erklärung": "Ein Akteur ist eine externe Einheit, die mit dem betrachteten System interagiert. Er kann beispielsweise eine Person, ein anderes System oder ein technisches Gerät darstellen.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aufgabe hat ein Akteur in einem Use-Case-Diagramm?",
+        "Antwortoption A": "Er definiert interne Systemstrukturen",
+        "Antwortoption B": "Er verwaltet interne Systemdaten",
+        "Antwortoption C": "Er kennzeichnet externe Interaktionen",
+        "Antwortoption D": "Er implementiert technische Systemfunktionen",
+        "Korrekte-Antwort": [
+            "C"
+        ],
+        "Erklärung": "Ein Akteur beschreibt eine Rolle außerhalb des Systems, die mit dem System interagiert. Er zeigt damit, wer oder was eine bestimmte Funktionalität des Systems nutzt oder anstößt.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wie wird ein Akteur in einem Use-Case-Diagramm dargestellt?",
+        "Antwortoption A": "Durch eine rechteckige Systembox",
+        "Antwortoption B": "Durch eine elliptische Funktionsform",
+        "Antwortoption C": "Durch eine kreisförmige Modelleinstellung",
+        "Antwortoption D": "Durch eine Strichmännchen-Darstellung",
+        "Korrekte-Antwort": [
+            "D"
+        ],
+        "Erklärung": "Ein Akteur wird in einem klassischen Use-Case-Diagramm als Strichmännchen dargestellt. Neben dem Symbol wird üblicherweise die Bezeichnung der jeweiligen Akteursrolle angegeben.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was symbolisiert das Strichmännchen in einem Use-Case-Diagramm?",
+        "Antwortoption A": "Eine beteiligte Akteursrolle",
+        "Antwortoption B": "Eine vorhandene Systemklasse",
+        "Antwortoption C": "Eine definierte Systemfunktion",
+        "Antwortoption D": "Eine vorhandene Systemdatenstruktur",
+        "Korrekte-Antwort": [
+            "A"
+        ],
+        "Erklärung": "Das Strichmännchen symbolisiert einen Akteur beziehungsweise eine Akteursrolle. Es stellt damit eine externe Einheit dar, die mit dem System interagiert.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wo befindet sich ein Akteur normalerweise in Bezug auf die Systemgrenze?",
+        "Antwortoption A": "Innerhalb der betrachteten Systemgrenze",
+        "Antwortoption B": "Außerhalb der betrachteten Systemgrenze",
+        "Antwortoption C": "Direkt auf der betrachteten Systemgrenze",
+        "Antwortoption D": "Innerhalb eines dargestellten Use Cases",
+        "Korrekte-Antwort": [
+            "B"
+        ],
+        "Erklärung": "Akteure befinden sich außerhalb der Systemgrenze, weil sie als externe Rollen oder Systeme mit dem betrachteten System interagieren.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Mit welchen Elementen kann ein Akteur in einem Use-Case-Diagramm interagieren?",
+        "Antwortoption A": "Mit Klassen und Attributen",
+        "Antwortoption B": "Mit Tabellen und Datensätzen",
+        "Antwortoption C": "Mit Use Cases und Systemfunktionen",
+        "Antwortoption D": "Mit Methoden und Programmbibliotheken",
+        "Korrekte-Antwort": [
+            "C"
+        ],
+        "Erklärung": "Ein Akteur steht im Use-Case-Diagramm insbesondere mit Use Cases in Beziehung. Dadurch wird dargestellt, welche Systemfunktionalitäten von diesem Akteur genutzt werden.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Kann ein Akteur nur eine Person darstellen?",
+        "Antwortoption A": "Ja, Akteure stellen ausschließlich Personen dar",
+        "Antwortoption B": "Nein, Akteure können auch externe Systeme darstellen",
+        "Antwortoption C": "Ja, Akteure beschreiben ausschließlich menschliche Rollen",
+        "Antwortoption D": "Nein, Akteure beschreiben ausschließlich technische Geräte",
+        "Korrekte-Antwort": [
+            "B"
+        ],
+        "Erklärung": "Ein Akteur muss keine Person sein. Auch externe Systeme, Geräte oder andere technische Einheiten können Akteure darstellen, sofern sie mit dem betrachteten System interagieren.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Beispiele können mögliche Akteure eines Systems sein?",
+        "Antwortoption A": "Kunde, Zahlungssystem und Drucker",
+        "Antwortoption B": "Datenbank, Methode und Klassenattribut",
+        "Antwortoption C": "Klasse, Objekt und Programmschleife",
+        "Antwortoption D": "Variable, Datensatz und Programmmodul",
+        "Korrekte-Antwort": [
+            "A"
+        ],
+        "Erklärung": "Mögliche Akteure können beispielsweise ein Kunde, ein externes Zahlungssystem oder ein Drucker sein. Entscheidend ist, dass sie außerhalb des betrachteten Systems stehen und mit diesem interagieren.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wie wird ein Use Case grafisch dargestellt?",
+        "Antwortoption A": "Durch eine rechteckige Systemdarstellung",
+        "Antwortoption B": "Durch eine elliptische Funktionsdarstellung",
+        "Antwortoption C": "Durch eine lineare Beziehungsdarstellung",
+        "Antwortoption D": "Durch eine symbolische Rollendarstellung",
+        "Korrekte-Antwort": [
+            "B"
+        ],
+        "Erklärung": "Ein Use Case wird in einem klassischen Use-Case-Diagramm als Ellipse dargestellt. Die Ellipse enthält die Bezeichnung der beschriebenen Systemfunktion.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche geometrische Form wird für einen Use Case verwendet?",
+        "Antwortoption A": "Ein Rechteck",
+        "Antwortoption B": "Ein Dreieck",
+        "Antwortoption C": "Eine Ellipse",
+        "Antwortoption D": "Ein Kreis",
+        "Korrekte-Antwort": [
+            "C"
+        ],
+        "Erklärung": "Ein Use Case wird durch eine Ellipse dargestellt. Diese Form unterscheidet ihn grafisch von Akteuren und der Systemgrenze.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was wird innerhalb der Ellipse eines Use Cases angegeben?",
+        "Antwortoption A": "Die Bezeichnung der Systemfunktion",
+        "Antwortoption B": "Die Bezeichnung der Akteursrolle",
+        "Antwortoption C": "Die Bezeichnung der Systemklasse",
+        "Antwortoption D": "Die Bezeichnung der Datenstruktur",
+        "Korrekte-Antwort": [
+            "A"
+        ],
+        "Erklärung": "Innerhalb der Ellipse wird die Bezeichnung des Use Cases angegeben. Sie beschreibt die Funktionalität beziehungsweise das Ziel, das durch den Anwendungsfall erreicht werden soll.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was unterscheidet einen Akteur von einem Use Case hinsichtlich ihrer grafischen Darstellung?",
+        "Antwortoption A": "Akteur als Ellipse, Use Case als Rechteck",
+        "Antwortoption B": "Akteur als Rechteck, Use Case als Linie",
+        "Antwortoption C": "Akteur als Linie, Use Case als Ellipse",
+        "Antwortoption D": "Akteur als Strichmännchen, Use Case als Ellipse",
+        "Korrekte-Antwort": [
+            "D"
+        ],
+        "Erklärung": "Ein Akteur wird als Strichmännchen dargestellt, während ein Use Case als Ellipse dargestellt wird. Beide Symbole haben dadurch eine klar unterscheidbare Bedeutung.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was unterscheidet einen Akteur von einem Use Case hinsichtlich ihrer Funktion im Diagramm?",
+        "Antwortoption A": "Akteur beschreibt externe Rolle, Use Case Systemfunktion",
+        "Antwortoption B": "Akteur beschreibt Systemfunktion, Use Case externe Rolle",
+        "Antwortoption C": "Akteur beschreibt Systemklasse, Use Case Datenstruktur",
+        "Antwortoption D": "Akteur beschreibt Datenstruktur, Use Case Systemklasse",
+        "Korrekte-Antwort": [
+            "A"
+        ],
+        "Erklärung": "Der Akteur beschreibt eine externe Rolle beziehungsweise Einheit, die mit dem System interagiert. Der Use Case beschreibt dagegen eine Funktionalität, die das System bereitstellt.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welches Beispiel stellt einen geeigneten Use Case dar?",
+        "Antwortoption A": "Kunde",
+        "Antwortoption B": "Konto",
+        "Antwortoption C": "Geld einzahlen",
+        "Antwortoption D": "Datenbank",
+        "Korrekte-Antwort": [
+            "C"
+        ],
+        "Erklärung": "„Geld einzahlen“ beschreibt eine konkrete Funktionalität beziehungsweise ein Ziel, das ein Akteur mithilfe des Systems erreichen kann. Daher eignet sich dieser Ausdruck als Use Case.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Warum werden Use Cases innerhalb der Systemgrenze dargestellt?",
+        "Antwortoption A": "Weil sie externe Akteursrollen darstellen",
+        "Antwortoption B": "Weil sie bereitgestellte Systemfunktionen darstellen",
+        "Antwortoption C": "Weil sie technische Fremdsysteme darstellen",
+        "Antwortoption D": "Weil sie unabhängige Benutzerrollen darstellen",
+        "Korrekte-Antwort": [
+            "B"
+        ],
+        "Erklärung": "Use Cases gehören fachlich zum betrachteten System. Die Systemgrenze verdeutlicht daher, dass die dargestellten Funktionalitäten vom System angeboten werden.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist eine Systemgrenze?",
+        "Antwortoption A": "Eine Abgrenzung zwischen System und Umgebung",
+        "Antwortoption B": "Eine Verbindung zwischen Akteur und Use Case",
+        "Antwortoption C": "Eine Zuordnung zwischen Klassen und Objekten",
+        "Antwortoption D": "Eine Beziehung zwischen Funktionen und Methoden",
+        "Korrekte-Antwort": [
+            "A"
+        ],
+        "Erklärung": "Die Systemgrenze kennzeichnet, welche Funktionalitäten zum betrachteten System gehören und welche Elemente zur Umgebung des Systems zählen.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wozu dient die Systemgrenze in einem Use-Case-Diagramm?",
+        "Antwortoption A": "Sie kennzeichnet interne Klassenbeziehungen",
+        "Antwortoption B": "Sie kennzeichnet externe Akteursrollen",
+        "Antwortoption C": "Sie grenzt Systemfunktionen von der Umgebung ab",
+        "Antwortoption D": "Sie grenzt Datenstrukturen von den Methoden ab",
+        "Korrekte-Antwort": [
+            "C"
+        ],
+        "Erklärung": "Die Systemgrenze macht sichtbar, welche Funktionalitäten innerhalb des betrachteten Systems liegen. Akteure befinden sich dagegen außerhalb der Systemgrenze.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wie wird eine Systemgrenze in einem Use-Case-Diagramm dargestellt?",
+        "Antwortoption A": "Durch eine Ellipse",
+        "Antwortoption B": "Durch ein Rechteck",
+        "Antwortoption C": "Durch eine gestrichelte Linie",
+        "Antwortoption D": "Durch ein Strichmännchen",
+        "Korrekte-Antwort": [
+            "B"
+        ],
+        "Erklärung": "Die Systemgrenze wird üblicherweise durch ein Rechteck dargestellt. Die darin enthaltenen Use Cases gehören zum betrachteten System.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Elemente befinden sich innerhalb der Systemgrenze?",
+        "Antwortoption A": "Akteure und externe Systeme",
+        "Antwortoption B": "Use Cases und Systemfunktionen",
+        "Antwortoption C": "Akteure und externe Geräte",
+        "Antwortoption D": "Benutzer und externe Organisationen",
+        "Korrekte-Antwort": [
+            "B"
+        ],
+        "Erklärung": "Innerhalb der Systemgrenze befinden sich die Use Cases beziehungsweise die vom betrachteten System bereitgestellten Funktionalitäten.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Elemente befinden sich außerhalb der Systemgrenze?",
+        "Antwortoption A": "Use Cases und Systemfunktionen",
+        "Antwortoption B": "Systemfunktionen und Anwendungsfälle",
+        "Antwortoption C": "Akteure und externe Systeme",
+        "Antwortoption D": "Anwendungsfälle und interne Funktionen",
+        "Korrekte-Antwort": [
+            "C"
+        ],
+        "Erklärung": "Akteure und externe Systeme gehören zur Umgebung des betrachteten Systems und werden deshalb außerhalb der Systemgrenze dargestellt.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wo wird der Systemname in einem Use-Case-Diagramm angegeben?",
+        "Antwortoption A": "Unterhalb des jeweiligen Akteurs",
+        "Antwortoption B": "Innerhalb der Systemgrenze",
+        "Antwortoption C": "Innerhalb jeder einzelnen Assoziation",
+        "Antwortoption D": "Außerhalb der Systemgrenze",
+        "Korrekte-Antwort": [
+            "B"
+        ],
+        "Erklärung": "Der Name des betrachteten Systems wird üblicherweise innerhalb beziehungsweise am oberen Rand der Systemgrenze angegeben. Dadurch wird eindeutig gekennzeichnet, welches System modelliert wird.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Warum ist die Abgrenzung zwischen System und Umgebung wichtig?",
+        "Antwortoption A": "Sie macht technische Implementierungen sichtbar",
+        "Antwortoption B": "Sie macht interne Klassenstrukturen sichtbar",
+        "Antwortoption C": "Sie macht Datenbanktabellen eindeutig sichtbar",
+        "Antwortoption D": "Sie macht Systemumfang und Verantwortungsbereich sichtbar",
+        "Korrekte-Antwort": [
+            "D"
+        ],
+        "Erklärung": "Die Systemgrenze zeigt, welche Funktionalitäten zum betrachteten System gehören und welche Elemente außerhalb liegen. Dadurch wird der Umfang und Verantwortungsbereich des Systems verständlich.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Darstellung beschreibt eine korrekte Systemgrenze in einem Use-Case-Diagramm?",
+        "Antwortoption A": "Ein Rechteck umfasst die Use Cases, Akteure stehen außerhalb",
+        "Antwortoption B": "Eine Ellipse umfasst die Akteure, Use Cases stehen außerhalb",
+        "Antwortoption C": "Ein Strichmännchen umfasst die Use Cases, Akteure stehen innerhalb",
+        "Antwortoption D": "Eine Linie umfasst die Akteure, Use Cases stehen außerhalb",
+        "Korrekte-Antwort": [
+            "A"
+        ],
+        "Erklärung": "Eine korrekte Systemgrenze wird als Rechteck dargestellt. Die Use Cases befinden sich innerhalb dieser Grenze, während die externen Akteure außerhalb angeordnet werden.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist eine Assoziation in einem Use-Case-Diagramm?",
+        "Antwortoption A": "Eine Verbindung zwischen Systemklassen",
+        "Antwortoption B": "Eine Verbindung zwischen Akteur und Use Case",
+        "Antwortoption C": "Eine Verbindung zwischen Datenbanken",
+        "Antwortoption D": "Eine Verbindung zwischen Systemattributen",
+        "Korrekte-Antwort": [
+            "B"
+        ],
+        "Erklärung": "Eine Assoziation stellt im Use-Case-Diagramm eine Beziehung zwischen einem Akteur und einem Use Case dar. Sie zeigt, dass der Akteur mit dieser Funktionalität interagiert.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Elemente werden durch eine Assoziation miteinander verbunden?",
+        "Antwortoption A": "Akteur und Use Case",
+        "Antwortoption B": "Klasse und Attribut",
+        "Antwortoption C": "Tabelle und Datensatz",
+        "Antwortoption D": "Methode und Parameter",
+        "Korrekte-Antwort": [
+            "A"
+        ],
+        "Erklärung": "Im Use-Case-Diagramm verbindet eine Assoziation einen Akteur mit einem Use Case. Dadurch wird die Interaktion des Akteurs mit der jeweiligen Systemfunktion dargestellt.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Bedeutung hat eine Assoziation zwischen einem Akteur und einem Use Case?",
+        "Antwortoption A": "Der Akteur implementiert den Use Case",
+        "Antwortoption B": "Der Akteur erbt den Use Case",
+        "Antwortoption C": "Der Akteur interagiert mit dem Use Case",
+        "Antwortoption D": "Der Akteur ersetzt den Use Case",
+        "Korrekte-Antwort": [
+            "C"
+        ],
+        "Erklärung": "Die Assoziation zeigt, dass der Akteur mit dem betreffenden Use Case interagiert beziehungsweise dessen Funktionalität nutzt oder auslöst.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wie wird eine Assoziation grafisch dargestellt?",
+        "Antwortoption A": "Durch eine durchgezogene Verbindungslinie",
+        "Antwortoption B": "Durch eine elliptische Begrenzungslinie",
+        "Antwortoption C": "Durch eine rechteckige Systembegrenzung",
+        "Antwortoption D": "Durch eine gestrichelte Erweiterungslinie",
+        "Korrekte-Antwort": [
+            "A"
+        ],
+        "Erklärung": "Eine einfache Assoziation wird im Use-Case-Diagramm als durchgezogene Linie zwischen Akteur und Use Case dargestellt.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Art von Linie wird für eine einfache Assoziation verwendet?",
+        "Antwortoption A": "Eine durchgezogene Linie",
+        "Antwortoption B": "Eine gestrichelte Linie",
+        "Antwortoption C": "Eine doppelte Linie",
+        "Antwortoption D": "Eine unterbrochene Linie",
+        "Korrekte-Antwort": [
+            "A"
+        ],
+        "Erklärung": "Eine einfache Assoziation zwischen Akteur und Use Case wird durch eine durchgezogene Linie dargestellt.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Beschreibung stellt eine korrekte Assoziation zwischen Akteur und Use Case dar?",
+        "Antwortoption A": "Akteur und Use Case werden durch eine Ellipse verbunden",
+        "Antwortoption B": "Akteur und Use Case werden durch eine gestrichelte Linie verbunden",
+        "Antwortoption C": "Akteur und Use Case werden durch eine durchgezogene Linie verbunden",
+        "Antwortoption D": "Akteur und Use Case werden durch ein Rechteck verbunden",
+        "Korrekte-Antwort": [
+            "C"
+        ],
+        "Erklärung": "Eine einfache Assoziation zwischen einem Akteur und einem Use Case wird durch eine durchgezogene Linie dargestellt. Sie zeigt die Interaktion zwischen beiden Elementen.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Worin unterscheidet sich eine Assoziation von einer include-Beziehung?",
+        "Antwortoption A": "Assoziation beschreibt Interaktion, include beschreibt eingebundene Funktionalität",
+        "Antwortoption B": "Assoziation beschreibt Vererbung, include beschreibt externe Akteure",
+        "Antwortoption C": "Assoziation beschreibt Systemgrenze, include beschreibt Systemnamen",
+        "Antwortoption D": "Assoziation beschreibt Datenstrukturen, include beschreibt Klassenbeziehungen",
+        "Korrekte-Antwort": [
+            "A"
+        ],
+        "Erklärung": "Eine Assoziation beschreibt die Verbindung beziehungsweise Interaktion zwischen einem Akteur und einem Use Case. Eine include-Beziehung beschreibt dagegen, dass ein Use Case die Funktionalität eines anderen Use Cases zwingend einbindet.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist eine include-Beziehung?",
+        "Antwortoption A": "Eine Beziehung zur verbindlichen Einbindung eines Use Cases",
+        "Antwortoption B": "Eine Beziehung zur optionalen Erweiterung eines Use Cases",
+        "Antwortoption C": "Eine Beziehung zwischen einem Akteur und einem Use Case",
+        "Antwortoption D": "Eine Beziehung zwischen zwei Use Cases mit gemeinsamer Funktionalität",
+        "Korrekte-Antwort": [
+            "A",
+            "D"
+        ],
+        "Erklärung": "Eine include-Beziehung verbindet zwei Use Cases und beschreibt, dass ein Use Case die Funktionalität eines anderen Use Cases verbindlich einbindet.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wann wird eine include-Beziehung verwendet?",
+        "Antwortoption A": "Wenn eine Funktionalität ausschließlich bei Bedarf ausgeführt wird",
+        "Antwortoption B": "Wenn ein Akteur mehrere Rollen gleichzeitig übernimmt",
+        "Antwortoption C": "Wenn eine gemeinsame Funktionalität verbindlich benötigt wird",
+        "Antwortoption D": "Wenn mehrere Use Cases dieselbe Funktionalität wiederverwenden",
+        "Korrekte-Antwort": [
+            "C",
+            "D"
+        ],
+        "Erklärung": "Include wird verwendet, wenn eine Funktionalität Bestandteil eines anderen Use Cases ist und bei dessen Ausführung verbindlich aufgerufen wird. Außerdem kann dadurch gemeinsame Funktionalität wiederverwendet werden.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was bedeutet es, wenn ein Use Case einen anderen Use Case inkludiert?",
+        "Antwortoption A": "Der erste Use Case bindet die Funktionalität des zweiten verbindlich ein",
+        "Antwortoption B": "Der erste Use Case erweitert den zweiten nur unter bestimmten Bedingungen",
+        "Antwortoption C": "Der zweite Use Case wird vollständig durch den ersten ersetzt",
+        "Antwortoption D": "Der zweite Use Case wird als Bestandteil des ersten ausgeführt",
+        "Korrekte-Antwort": [
+            "B",
+            "A"
+        ],
+        "Erklärung": "Beim Include wird die Funktionalität des inkludierten Use Cases verbindlich in den aufrufenden Use Case eingebunden. Der inkludierte Use Case ist somit Bestandteil des Ablaufs.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Ist der eingebundene Use Case bei include obligatorisch oder optional?",
+        "Antwortoption A": "Der eingebundene Use Case ist obligatorischer Bestandteil des Ablaufs",
+        "Antwortoption B": "Der eingebundene Use Case wird ausschließlich bei Bedarf ausgeführt",
+        "Antwortoption C": "Der eingebundene Use Case ist grundsätzlich obligatorisch",
+        "Antwortoption D": "Der eingebundene Use Case wird nur unter einer Bedingung aktiviert",
+        "Korrekte-Antwort": [
+            "C",
+            "A"
+        ],
+        "Erklärung": "Bei einer include-Beziehung ist die eingebundene Funktionalität obligatorisch. Sie wird Bestandteil des Ablaufs des aufrufenden Use Cases.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wie wird eine include-Beziehung grafisch dargestellt?",
+        "Antwortoption A": "Durch eine gestrichelte Linie mit einem gerichteten Pfeil",
+        "Antwortoption B": "Durch eine durchgezogene Linie zwischen den Use Cases",
+        "Antwortoption C": "Durch eine rechteckige Verbindung zwischen den Use Cases",
+        "Antwortoption D": "Durch eine elliptische Verbindung zwischen den Use Cases",
+        "Korrekte-Antwort": [
+            "A",
+            "B"
+        ],
+        "Erklärung": "Eine include-Beziehung wird durch eine gestrichelte Linie mit offenem Pfeil dargestellt. Die Linie trägt zusätzlich das Stereotyp «include».",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Art von Linie wird bei include verwendet?",
+        "Antwortoption A": "Eine gestrichelte Beziehungslinie",
+        "Antwortoption B": "Eine durchgezogene Beziehungslinie",
+        "Antwortoption C": "Eine doppelte Beziehungslinie",
+        "Antwortoption D": "Eine unterbrochene Verbindungslinie mit geschlossenem Ende",
+        "Korrekte-Antwort": [
+            "A",
+            "C"
+        ],
+        "Erklärung": "Bei einer include-Beziehung wird eine gestrichelte Linie verwendet. Sie verbindet den aufrufenden Use Case mit dem inkludierten Use Case.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welches Stereotyp wird bei include verwendet?",
+        "Antwortoption A": "«extend»",
+        "Antwortoption B": "«include»",
+        "Antwortoption C": "«association»",
+        "Antwortoption D": "«include» als Bezeichnung der eingebundenen Funktionalität",
+        "Korrekte-Antwort": [
+            "B",
+            "D"
+        ],
+        "Erklärung": "Das Stereotyp «include» kennzeichnet eine Include-Beziehung. Es wird an der gestrichelten Verbindung zwischen den beteiligten Use Cases angegeben.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "In welche Richtung zeigt der Pfeil bei einer include-Beziehung?",
+        "Antwortoption A": "Vom inkludierten Use Case zum aufrufenden Use Case",
+        "Antwortoption B": "Vom Akteur zum inkludierten Use Case",
+        "Antwortoption C": "Vom aufrufenden Use Case zum inkludierten Use Case",
+        "Antwortoption D": "Vom aufrufenden Use Case in Richtung der eingebundenen Funktionalität",
+        "Korrekte-Antwort": [
+            "C",
+            "D"
+        ],
+        "Erklärung": "Der Pfeil zeigt beim Include vom aufrufenden Use Case zum inkludierten Use Case. Damit wird die Richtung der Einbindung verdeutlicht.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was unterscheidet einen normalen Use Case von einem inkludierten Use Case?",
+        "Antwortoption A": "Der normale Use Case beschreibt das übergeordnete Ziel des Ablaufs",
+        "Antwortoption B": "Der inkludierte Use Case stellt eine verbindlich wiederverwendete Funktionalität bereit",
+        "Antwortoption C": "Der normale Use Case befindet sich außerhalb der Systemgrenze",
+        "Antwortoption D": "Der inkludierte Use Case wird grundsätzlich nur optional ausgeführt",
+        "Korrekte-Antwort": [
+            "B",
+            "D"
+        ],
+        "Erklärung": "Ein inkludierter Use Case stellt eine Funktionalität bereit, die von einem anderen Use Case verbindlich eingebunden wird. Dadurch kann gemeinsame Funktionalität strukturiert und wiederverwendet werden.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welches Beispiel stellt eine sinnvolle include-Beziehung dar?",
+        "Antwortoption A": "„Geld abheben“ inkludiert „Karte prüfen“",
+        "Antwortoption B": "„Anmelden“ inkludiert „Passwort prüfen“",
+        "Antwortoption C": "„Bestellung aufgeben“ erweitert optional „Gutschein verwenden“",
+        "Antwortoption D": "„Konto anzeigen“ erweitert optional „Daten exportieren“",
+        "Korrekte-Antwort": [
+            "A",
+            "B"
+        ],
+        "Erklärung": "Beim Geldabheben muss beispielsweise die Karte geprüft werden. Auch beim Anmelden kann die Passwortprüfung ein verbindlicher Bestandteil des Ablaufs sein. Beide Beispiele eignen sich daher für include.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Darstellung zeigt zwei Use Cases mit einer korrekten include-Beziehung?",
+        "Antwortoption A": "Use Case A --«include»--> Use Case B mit gestrichelter Linie",
+        "Antwortoption B": "Use Case A -------- Use Case B mit durchgezogener Linie",
+        "Antwortoption C": "Use Case A --«extend»--> Use Case B mit gestrichelter Linie",
+        "Antwortoption D": "Use Case A == Use Case B mit doppelter Verbindungslinie",
+        "Korrekte-Antwort": [
+            "A",
+            "C"
+        ],
+        "Erklärung": "Eine Include-Beziehung wird durch eine gestrichelte Linie mit dem Stereotyp «include» und einem gerichteten Pfeil dargestellt. Die Richtung zeigt vom aufrufenden zum inkludierten Use Case.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Woran erkennen Sie in einem Diagramm eine include-Beziehung?",
+        "Antwortoption A": "An der gestrichelten Linie mit dem Stereotyp «include»",
+        "Antwortoption B": "An der gerichteten Verbindung zwischen zwei Use Cases",
+        "Antwortoption C": "An einer durchgezogenen Linie ohne Beschriftung",
+        "Antwortoption D": "An einem Strichmännchen zwischen zwei Use Cases",
+        "Korrekte-Antwort": [
+            "B",
+            "D"
+        ],
+        "Erklärung": "Eine include-Beziehung ist an der gestrichelten Linie, dem gerichteten Pfeil und dem Stereotyp «include» zu erkennen. Sie verbindet zwei Use Cases.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist eine extend-Beziehung?",
+        "Antwortoption A": "Eine Beziehung zur optionalen Erweiterung eines Use Cases",
+        "Antwortoption B": "Eine Beziehung zur verbindlichen Einbindung eines Use Cases",
+        "Antwortoption C": "Eine Beziehung zwischen Akteur und Systemgrenze",
+        "Antwortoption D": "Eine Beziehung, durch die ein Use Case unter bestimmten Bedingungen erweitert wird",
+        "Korrekte-Antwort": [
+            "A",
+            "D"
+        ],
+        "Erklärung": "Eine extend-Beziehung beschreibt eine optionale Erweiterung eines bestehenden Use Cases. Die Erweiterung wird nur ausgeführt, wenn eine entsprechende Bedingung erfüllt ist.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wann wird eine extend-Beziehung verwendet?",
+        "Antwortoption A": "Wenn ein Use Case eine optionale Funktionalität ergänzen soll",
+        "Antwortoption B": "Wenn eine Funktionalität zwingend Bestandteil jedes Ablaufs ist",
+        "Antwortoption C": "Wenn eine zusätzliche Funktion nur unter bestimmten Bedingungen benötigt wird",
+        "Antwortoption D": "Wenn ein Use Case vollständig durch einen anderen ersetzt werden soll",
+        "Korrekte-Antwort": [
+            "C",
+            "A"
+        ],
+        "Erklärung": "Extend wird eingesetzt, wenn ein bestehender Use Case durch eine optionale Funktionalität ergänzt werden kann. Die Erweiterung ist nicht Bestandteil jedes Ablaufs.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was bedeutet es, wenn ein Use Case einen anderen Use Case erweitert?",
+        "Antwortoption A": "Der erweiternde Use Case fügt unter bestimmten Bedingungen zusätzliches Verhalten hinzu",
+        "Antwortoption B": "Der erweiterte Use Case bindet eine Funktionalität immer verbindlich ein",
+        "Antwortoption C": "Der erweiternde Use Case ersetzt die ursprüngliche Funktion vollständig",
+        "Antwortoption D": "Der erweiterte Use Case bleibt auch ohne die Erweiterung grundsätzlich ausführbar",
+        "Korrekte-Antwort": [
+            "B",
+            "D"
+        ],
+        "Erklärung": "Bei extend wird einem bestehenden Use Case optionales Verhalten hinzugefügt. Der ursprüngliche Use Case kann grundsätzlich auch ohne die Erweiterung ausgeführt werden.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Ist eine Erweiterung durch extend obligatorisch oder optional?",
+        "Antwortoption A": "Die Erweiterung ist optional und wird nicht in jedem Ablauf ausgeführt",
+        "Antwortoption B": "Die Erweiterung ist obligatorisch und wird immer ausgeführt",
+        "Antwortoption C": "Die Erweiterung ist grundsätzlich optional",
+        "Antwortoption D": "Die Erweiterung wird nur bei erfüllter Bedingung ausgeführt",
+        "Korrekte-Antwort": [
+            "A",
+            "C"
+        ],
+        "Erklärung": "Eine extend-Beziehung beschreibt optionales Verhalten. Die Erweiterung wird nur dann ausgeführt, wenn die entsprechende Bedingung erfüllt ist.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Bedeutung hat eine Bedingung bei einer extend-Beziehung?",
+        "Antwortoption A": "Sie bestimmt, ob die optionale Erweiterung ausgeführt wird",
+        "Antwortoption B": "Sie legt fest, welcher Akteur das System betreibt",
+        "Antwortoption C": "Sie bestimmt, ob die Systemgrenze verändert werden muss",
+        "Antwortoption D": "Sie legt fest, unter welchen Voraussetzungen das zusätzliche Verhalten eintritt",
+        "Korrekte-Antwort": [
+            "A",
+            "D"
+        ],
+        "Erklärung": "Die Bedingung legt fest, unter welchen Voraussetzungen die Erweiterung aktiviert wird. Dadurch wird das optionale Verhalten eindeutig an eine Voraussetzung geknüpft.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wie wird eine extend-Beziehung grafisch dargestellt?",
+        "Antwortoption A": "Durch eine gestrichelte Linie mit gerichteter Pfeilspitze",
+        "Antwortoption B": "Durch eine durchgezogene Linie zwischen den Use Cases",
+        "Antwortoption C": "Durch eine gestrichelte Linie mit dem Stereotyp «extend»",
+        "Antwortoption D": "Durch eine rechteckige Verbindung innerhalb der Systemgrenze",
+        "Korrekte-Antwort": [
+            "C",
+            "A"
+        ],
+        "Erklärung": "Eine extend-Beziehung wird durch eine gestrichelte Linie mit einem offenen Pfeil und dem Stereotyp «extend» dargestellt.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Art von Linie wird bei extend verwendet?",
+        "Antwortoption A": "Eine durchgezogene Linie",
+        "Antwortoption B": "Eine gestrichelte Linie",
+        "Antwortoption C": "Eine doppelte Verbindungslinie",
+        "Antwortoption D": "Eine elliptische Begrenzungslinie",
+        "Korrekte-Antwort": [
+            "B",
+            "D"
+        ],
+        "Erklärung": "Die extend-Beziehung wird wie include durch eine gestrichelte Linie dargestellt. Das Stereotyp «extend» unterscheidet sie von anderen Beziehungen.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welches Stereotyp wird bei extend verwendet?",
+        "Antwortoption A": "«extend»",
+        "Antwortoption B": "«include»",
+        "Antwortoption C": "«association»",
+        "Antwortoption D": "«extend» zur Kennzeichnung der optionalen Erweiterung",
+        "Korrekte-Antwort": [
+            "A",
+            "D"
+        ],
+        "Erklärung": "Das Stereotyp «extend» kennzeichnet eine optionale Erweiterungsbeziehung zwischen zwei Use Cases.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "In welche Richtung zeigt der Pfeil bei einer extend-Beziehung?",
+        "Antwortoption A": "Vom erweiterten Use Case zum erweiternden Use Case",
+        "Antwortoption B": "Vom erweiternden Use Case zum erweiterten Use Case",
+        "Antwortoption C": "Vom Akteur zum erweiternden Use Case",
+        "Antwortoption D": "Vom optionalen Verhalten in Richtung des erweiterten Use Cases",
+        "Korrekte-Antwort": [
+            "A",
+            "D"
+        ],
+        "Erklärung": "Bei extend zeigt der Pfeil vom erweiternden Use Case zum erweiterten beziehungsweise ursprünglichen Use Case. Damit unterscheidet sich die Richtung von include.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist der Unterschied zwischen include und extend?",
+        "Antwortoption A": "Include beschreibt verbindliche Einbindung, extend beschreibt optionale Erweiterung",
+        "Antwortoption B": "Include beschreibt optionale Erweiterung, extend beschreibt verbindliche Einbindung",
+        "Antwortoption C": "Include verwendet ausschließlich Akteure, extend ausschließlich Klassen",
+        "Antwortoption D": "Include wird immer ausgeführt, extend nur unter einer bestimmten Bedingung",
+        "Korrekte-Antwort": [
+            "A",
+            "D"
+        ],
+        "Erklärung": "Include steht für verbindlich eingebundene Funktionalität. Extend beschreibt dagegen optionales Verhalten, das nur unter bestimmten Bedingungen ausgeführt wird.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welches Beispiel stellt eine sinnvolle extend-Beziehung dar?",
+        "Antwortoption A": "„Bestellung aufgeben“ wird durch „Gutschein verwenden“ optional erweitert",
+        "Antwortoption B": "„Anmelden“ inkludiert verbindlich „Passwort prüfen“",
+        "Antwortoption C": "„Geld abheben“ wird durch „Quittung drucken“ unter einer Bedingung erweitert",
+        "Antwortoption D": "„Daten speichern“ inkludiert verbindlich „Validierung durchführen“",
+        "Korrekte-Antwort": [
+            "A",
+            "C"
+        ],
+        "Erklärung": "Eine optionale Gutscheinverwendung oder das Drucken einer Quittung unter bestimmten Voraussetzungen sind typische Beispiele für optionale Erweiterungen.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Darstellung zeigt zwei Use Cases mit einer korrekten extend-Beziehung?",
+        "Antwortoption A": "Use Case A --«extend»--> Use Case B mit gestrichelter Linie",
+        "Antwortoption B": "Use Case A --«include»--> Use Case B mit gestrichelter Linie",
+        "Antwortoption C": "Use Case A -------- Use Case B mit durchgezogener Linie",
+        "Antwortoption D": "Der erweiternde Use Case zeigt mit dem Pfeil auf den erweiterten Use Case",
+        "Korrekte-Antwort": [
+            "A",
+            "D"
+        ],
+        "Erklärung": "Eine extend-Beziehung wird mit einer gestrichelten Linie, dem Stereotyp «extend» und einem gerichteten Pfeil dargestellt. Der Pfeil zeigt vom erweiternden zum erweiterten Use Case.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Woran erkennen Sie in einem Diagramm eine extend-Beziehung?",
+        "Antwortoption A": "An einer gestrichelten Linie mit dem Stereotyp «extend»",
+        "Antwortoption B": "An einer durchgezogenen Linie ohne Stereotyp",
+        "Antwortoption C": "An einer gerichteten Verbindung vom erweiternden zum erweiterten Use Case",
+        "Antwortoption D": "An einer Verbindung zwischen einem Akteur und einer Systemgrenze",
+        "Korrekte-Antwort": [
+            "A",
+            "C"
+        ],
+        "Erklärung": "Eine extend-Beziehung ist an der gestrichelten Linie, dem Stereotyp «extend» und der Pfeilrichtung vom erweiternden zum erweiterten Use Case erkennbar.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist ein Extension Point?",
+        "Antwortoption A": "Eine definierte Stelle für optionales Erweiterungsverhalten",
+        "Antwortoption B": "Eine verbindliche Schnittstelle zwischen zwei Akteuren",
+        "Antwortoption C": "Eine Stelle innerhalb eines Use Cases, an der eine Erweiterung eingefügt werden kann",
+        "Antwortoption D": "Eine technische Komponente außerhalb der Systemgrenze",
+        "Korrekte-Antwort": [
+            "A",
+            "C"
+        ],
+        "Erklärung": "Ein Extension Point bezeichnet eine definierte Stelle innerhalb eines Use Cases, an der eine optionale Erweiterung durch eine extend-Beziehung ansetzen kann.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Zu welcher Beziehung gehört der Extension Point?",
+        "Antwortoption A": "Zur include-Beziehung",
+        "Antwortoption B": "Zur extend-Beziehung",
+        "Antwortoption C": "Zur Assoziation zwischen Akteur und Use Case",
+        "Antwortoption D": "Zur optionalen Erweiterungsbeziehung",
+        "Korrekte-Antwort": [
+            "B",
+            "D"
+        ],
+        "Erklärung": "Ein Extension Point gehört zur extend-Beziehung. Er bezeichnet die Stelle im erweiterten Use Case, an der das optionale Verhalten eingefügt werden kann.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Funktion hat ein Extension Point?",
+        "Antwortoption A": "Er kennzeichnet eine mögliche Stelle für eine Erweiterung",
+        "Antwortoption B": "Er beschreibt einen verbindlich eingebundenen Ablauf",
+        "Antwortoption C": "Er legt fest, wo optionales Verhalten eingefügt werden kann",
+        "Antwortoption D": "Er kennzeichnet den Beginn der Systemgrenze",
+        "Korrekte-Antwort": [
+            "A",
+            "C"
+        ],
+        "Erklärung": "Ein Extension Point definiert eine Stelle, an der eine optionale Erweiterung in den Ablauf eines Use Cases eingefügt werden kann.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wo befindet sich ein Extension Point?",
+        "Antwortoption A": "Innerhalb des erweiterten Use Cases",
+        "Antwortoption B": "Außerhalb der Systemgrenze",
+        "Antwortoption C": "Innerhalb des erweiternden Akteurs",
+        "Antwortoption D": "An einer definierten Stelle des erweiterten Use Cases",
+        "Korrekte-Antwort": [
+            "A",
+            "D"
+        ],
+        "Erklärung": "Ein Extension Point befindet sich innerhalb des erweiterten Use Cases. Er kennzeichnet dort die Stelle, an der die optionale Erweiterung eingefügt werden kann.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was wird durch einen Extension Point innerhalb eines Use Cases angegeben?",
+        "Antwortoption A": "Eine mögliche Stelle für zusätzliches Verhalten",
+        "Antwortoption B": "Die Identität des beteiligten Akteurs",
+        "Antwortoption C": "Die Bezeichnung der Systemgrenze",
+        "Antwortoption D": "Die Position, an der eine optionale Erweiterung stattfinden kann",
+        "Korrekte-Antwort": [
+            "A",
+            "D"
+        ],
+        "Erklärung": "Der Extension Point beschreibt eine konkrete Stelle innerhalb des erweiterten Use Cases, an der optionales Verhalten eingefügt werden kann.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wie hängen extend, Extension Point und Condition miteinander zusammen?",
+        "Antwortoption A": "Extend beschreibt die optionale Erweiterungsbeziehung",
+        "Antwortoption B": "Der Extension Point bezeichnet die mögliche Einfügestelle",
+        "Antwortoption C": "Die Condition legt fest, wann die Erweiterung ausgeführt wird",
+        "Antwortoption D": "Alle drei Elemente beschreiben ausschließlich verbindliche Funktionalitäten",
+        "Korrekte-Antwort": [
+            "A",
+            "B"
+        ],
+        "Erklärung": "Extend beschreibt die Beziehung, der Extension Point bezeichnet die Stelle im erweiterten Use Case und die Condition legt fest, unter welchen Voraussetzungen die Erweiterung ausgeführt wird.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Warum ist ein Extension Point für eine extend-Beziehung relevant?",
+        "Antwortoption A": "Er legt die Stelle für das optionale Erweiterungsverhalten fest",
+        "Antwortoption B": "Er macht die Systemgrenze für externe Akteure sichtbar",
+        "Antwortoption C": "Er ermöglicht die Zuordnung der Erweiterung zu einem konkreten Ablaufpunkt",
+        "Antwortoption D": "Er beschreibt die verbindliche Einbindung eines weiteren Use Cases",
+        "Korrekte-Antwort": [
+            "A",
+            "C"
+        ],
+        "Erklärung": "Der Extension Point ist relevant, weil er festlegt, an welcher Stelle des erweiterten Use Cases das optionale Verhalten eingefügt werden kann.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was versteht man unter einer Condition im Zusammenhang mit einem Use-Case-Diagramm?",
+        "Antwortoption A": "Eine Voraussetzung für das optionale Ausführen einer Erweiterung",
+        "Antwortoption B": "Eine Beschreibung der technischen Systemimplementierung",
+        "Antwortoption C": "Eine Bedingung, die das Eintreten einer Erweiterung steuert",
+        "Antwortoption D": "Eine Definition der beteiligten Akteursrollen",
+        "Korrekte-Antwort": [
+            "A",
+            "C"
+        ],
+        "Erklärung": "Eine Condition ist eine Bedingung, die festlegt, wann eine optionale Erweiterung im Rahmen einer extend-Beziehung ausgeführt wird.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Funktion hat eine Condition bei extend?",
+        "Antwortoption A": "Sie legt fest, wann die optionale Erweiterung ausgeführt wird",
+        "Antwortoption B": "Sie beschreibt die verbindliche Einbindung eines Use Cases",
+        "Antwortoption C": "Sie definiert die Voraussetzung für das zusätzliche Verhalten",
+        "Antwortoption D": "Sie bestimmt die Position des Akteurs außerhalb der Systemgrenze",
+        "Korrekte-Antwort": [
+            "A",
+            "C"
+        ],
+        "Erklärung": "Die Condition bestimmt, unter welchen Voraussetzungen das optionale Verhalten einer extend-Beziehung aktiviert wird.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wann wird die Erweiterung eines Use Cases ausgeführt?",
+        "Antwortoption A": "Wenn die definierte Bedingung erfüllt ist",
+        "Antwortoption B": "Bei jedem regulären Ablauf des erweiterten Use Cases",
+        "Antwortoption C": "Wenn die für die Erweiterung festgelegte Voraussetzung eintritt",
+        "Antwortoption D": "Sobald der Akteur das System betritt",
+        "Korrekte-Antwort": [
+            "A",
+            "C"
+        ],
+        "Erklärung": "Eine extend-Erweiterung wird nur ausgeführt, wenn die dafür definierte Bedingung erfüllt ist. Ohne erfüllte Bedingung bleibt der ursprüngliche Use Case unverändert.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist der Zusammenhang zwischen einer Condition und einem Extension Point?",
+        "Antwortoption A": "Die Condition bestimmt, ob die Erweiterung am Extension Point ausgeführt wird",
+        "Antwortoption B": "Der Extension Point definiert die Systemgrenze für die Condition",
+        "Antwortoption C": "Der Extension Point bezeichnet die Stelle, an der die Bedingung relevant wird",
+        "Antwortoption D": "Die Condition ersetzt den Extension Point im Use Case",
+        "Korrekte-Antwort": [
+            "A",
+            "C"
+        ],
+        "Erklärung": "Der Extension Point definiert die Stelle im erweiterten Use Case. Die Condition legt fest, ob das zusätzliche Verhalten an dieser Stelle tatsächlich ausgeführt wird.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welches Beispiel stellt eine Condition bei einer extend-Beziehung dar?",
+        "Antwortoption A": "„Wenn der Kunde einen Gutschein besitzt“",
+        "Antwortoption B": "„Wenn die Anmeldung erfolgreich abgeschlossen wurde“",
+        "Antwortoption C": "„Gutschein verwenden“ als optionaler Use Case",
+        "Antwortoption D": "„Bestellung aufgeben“ als grundlegender Use Case",
+        "Korrekte-Antwort": [
+            "A",
+            "B"
+        ],
+        "Erklärung": "„Wenn der Kunde einen Gutschein besitzt“ oder „wenn die Anmeldung erfolgreich abgeschlossen wurde“ sind Bedingungen, die festlegen können, wann eine optionale Erweiterung ausgeführt wird.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Warum ist die Bedingung bei einer optionalen Erweiterung wichtig?",
+        "Antwortoption A": "Sie verhindert, dass die Erweiterung bei jedem Ablauf ausgeführt wird",
+        "Antwortoption B": "Sie legt die Systemgrenze des betrachteten Systems fest",
+        "Antwortoption C": "Sie bestimmt eindeutig, unter welchen Voraussetzungen die Erweiterung eintritt",
+        "Antwortoption D": "Sie definiert die beteiligten Akteure des Use Cases",
+        "Korrekte-Antwort": [
+            "A",
+            "C"
+        ],
+        "Erklärung": "Die Condition ist wichtig, weil sie eindeutig festlegt, wann das optionale Verhalten ausgeführt wird. Dadurch bleibt der ursprüngliche Use Case auch ohne Erweiterung gültig.",
+        "Eingabe": ""
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen zur Vererbung bzw. Generalisierung in einem Use-Case-Diagramm sind richtig?",
+        "Antwortoption A": "Ein spezielles Element übernimmt Eigenschaften oder Verhaltensweisen eines allgemeineren Elements.",
+        "Antwortoption B": "Eine Generalisierung kann gemeinsame Eigenschaften mehrerer spezialisierter Elemente zusammenfassen.",
+        "Antwortoption C": "Das spezialisierte Element muss vollständig unabhängig vom allgemeinen Element beschrieben werden.",
+        "Antwortoption D": "Vererbung wird verwendet, um eine Beziehung zwischen einem allgemeinen und einem spezialisierten Element auszudrücken.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "D"
+        ],
+        "Erklärung": "Bei der Vererbung bzw. Generalisierung wird ein allgemeines Element durch spezialisierte Elemente konkretisiert. Gemeinsame Eigenschaften oder Verhaltensweisen können dabei vom allgemeinen Element übernommen werden."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen beschreiben eine Generalisierungsbeziehung korrekt?",
+        "Antwortoption A": "Sie beschreibt eine Beziehung zwischen einem allgemeineren und einem spezielleren Element.",
+        "Antwortoption B": "Sie wird ausschließlich zwischen Akteuren verwendet.",
+        "Antwortoption C": "Das speziellere Element stellt eine konkretere Ausprägung des allgemeineren Elements dar.",
+        "Antwortoption D": "Die Beziehung kann gemeinsame Merkmale in einer allgemeinen Struktur zusammenfassen.",
+        "Korrekte-Antwort": [
+            "C",
+            "D",
+            "A"
+        ],
+        "Erklärung": "Eine Generalisierung beschreibt eine Ist-eine-Art-von-Beziehung zwischen einem speziellen und einem allgemeinen Element. Sie kann beispielsweise zwischen Akteuren oder auch zwischen Use Cases auftreten."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Elemente können in einem Use-Case-Diagramm durch Generalisierung miteinander verbunden werden?",
+        "Antwortoption A": "Akteure können über eine Generalisierungsbeziehung miteinander verbunden werden.",
+        "Antwortoption B": "Use Cases können über eine Generalisierungsbeziehung miteinander verbunden werden.",
+        "Antwortoption C": "Eine Systemgrenze wird durch Generalisierung mit einem Akteur verbunden.",
+        "Antwortoption D": "Spezialisierte und allgemeine Elemente können durch Generalisierung in Beziehung gesetzt werden.",
+        "Korrekte-Antwort": [
+            "B",
+            "A",
+            "D"
+        ],
+        "Erklärung": "Generalisierung kann unter anderem zwischen Akteuren und zwischen Use Cases verwendet werden. Dabei steht jeweils ein spezielleres Element einem allgemeineren Element gegenüber."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen unterscheiden ein allgemeines von einem spezialisierten Element korrekt?",
+        "Antwortoption A": "Das allgemeine Element beschreibt gemeinsame Merkmale auf einer übergeordneten Ebene.",
+        "Antwortoption B": "Das spezialisierte Element kann die Eigenschaften des allgemeinen Elements übernehmen.",
+        "Antwortoption C": "Das spezialisierte Element beschreibt eine konkretere Ausprägung des allgemeinen Elements.",
+        "Antwortoption D": "Das allgemeine Element darf niemals gemeinsame Eigenschaften enthalten.",
+        "Korrekte-Antwort": [
+            "C",
+            "B",
+            "A"
+        ],
+        "Erklärung": "Das allgemeine Element beschreibt gemeinsame Merkmale. Das spezialisierte Element konkretisiert diese und kann Eigenschaften oder Verhalten des allgemeinen Elements übernehmen."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen zur grafischen Darstellung einer Vererbung sind richtig?",
+        "Antwortoption A": "Die Beziehung wird als Linie zwischen den beteiligten Elementen dargestellt.",
+        "Antwortoption B": "Die Generalisierung besitzt eine spezielle Pfeilspitze.",
+        "Antwortoption C": "Die Pfeilspitze ist als hohles Dreieck dargestellt.",
+        "Antwortoption D": "Die Beziehung wird grundsätzlich mit einer ausgefüllten Raute dargestellt.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C"
+        ],
+        "Erklärung": "Eine Generalisierung wird grafisch durch eine Linie mit einer hohlen Dreieckspitze dargestellt. Die Darstellung unterscheidet sie beispielsweise von einer normalen Assoziation."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen zur Linie einer Vererbungsbeziehung sind korrekt?",
+        "Antwortoption A": "Die Generalisierung wird mit einer durchgezogenen Linie dargestellt.",
+        "Antwortoption B": "Die Linie wird immer als gestrichelte Linie dargestellt.",
+        "Antwortoption C": "Die Linie verbindet das spezialisierte mit dem allgemeineren Element.",
+        "Antwortoption D": "An einem Ende befindet sich eine hohle Dreieckspfeilspitze.",
+        "Korrekte-Antwort": [
+            "A",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Die Generalisierung verwendet eine durchgezogene Linie mit einer hohlen Dreieckspfeilspitze. Die Pfeilspitze zeigt auf das allgemeinere Element."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen zur Pfeilspitze bei einer Vererbungsbeziehung sind richtig?",
+        "Antwortoption A": "Die Pfeilspitze ist als hohles Dreieck dargestellt.",
+        "Antwortoption B": "Das Dreieck zeigt auf das allgemeinere Element.",
+        "Antwortoption C": "Die Pfeilspitze ist eine ausgefüllte Raute.",
+        "Antwortoption D": "Die Pfeilspitze unterscheidet die Generalisierung von einer normalen Assoziation.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "D"
+        ],
+        "Erklärung": "Bei der Generalisierung wird ein hohles Dreieck verwendet. Es zeigt vom spezialisierten Element zum allgemeineren Element."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen zur Richtung des Pfeils bei Vererbung sind korrekt?",
+        "Antwortoption A": "Der Pfeil zeigt grundsätzlich auf das spezialisierte Element.",
+        "Antwortoption B": "Der Pfeil verläuft vom speziellen zum allgemeinen Element.",
+        "Antwortoption C": "Die Pfeilspitze befindet sich am allgemeinen Element.",
+        "Antwortoption D": "Die Richtung kann als 'vom Speziellen zum Allgemeinen' gemerkt werden.",
+        "Korrekte-Antwort": [
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Bei der Generalisierung zeigt die hohle Dreieckspitze auf das allgemeine Element. Die Richtung lautet daher vom Speziellen zum Allgemeinen."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was bedeutet die Aussage 'vom Speziellen zum Allgemeinen' bei einer Generalisierung?",
+        "Antwortoption A": "Der Pfeil beginnt beim spezialisierten Element.",
+        "Antwortoption B": "Die Pfeilspitze zeigt auf das allgemeinere Element.",
+        "Antwortoption C": "Das allgemeine Element wird durch den Pfeil als Unterklasse gekennzeichnet.",
+        "Antwortoption D": "Die Richtung beschreibt die Beziehung zwischen einer konkreteren und einer allgemeineren Ausprägung.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "D"
+        ],
+        "Erklärung": "'Vom Speziellen zum Allgemeinen' beschreibt die Leserichtung der Generalisierung: Die Linie geht vom spezialisierten Element aus und die hohle Dreieckspitze zeigt zum allgemeinen Element."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Woran erkennen Sie eine Vererbungsbeziehung in einem UML-Diagramm?",
+        "Antwortoption A": "An einer durchgezogenen Linie mit hohler Dreieckspitze.",
+        "Antwortoption B": "An einer Pfeilspitze, die auf das allgemeine Element zeigt.",
+        "Antwortoption C": "An einer gestrichelten Linie mit «include».",
+        "Antwortoption D": "An der Beziehung zwischen einem speziellen und einem allgemeineren Element.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "D"
+        ],
+        "Erklärung": "Eine Generalisierung erkennt man an der durchgezogenen Linie mit hohlem Dreieck. Die Spitze zeigt auf das allgemeine Element."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Beschreibung stellt eine korrekte Vererbungsbeziehung zwischen zwei Use Cases dar?",
+        "Antwortoption A": "Der spezielle Use Case ist mit einer durchgezogenen Linie mit dem allgemeinen Use Case verbunden.",
+        "Antwortoption B": "Die Pfeilspitze zeigt vom allgemeinen zum speziellen Use Case.",
+        "Antwortoption C": "Die Pfeilspitze ist ein hohles Dreieck.",
+        "Antwortoption D": "Die hohle Dreieckspitze zeigt auf den allgemeineren Use Case.",
+        "Korrekte-Antwort": [
+            "C",
+            "D",
+            "A"
+        ],
+        "Erklärung": "Eine korrekte Generalisierung besteht aus einer durchgezogenen Linie und einer hohlen Dreieckspitze. Diese Spitze zeigt vom speziellen zum allgemeinen Use Case."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen zur Darstellung eines Akteurs sind richtig?",
+        "Antwortoption A": "Ein Akteur wird häufig als Strichmännchen dargestellt.",
+        "Antwortoption B": "Ein Akteur steht für eine Rolle außerhalb des betrachteten Systems.",
+        "Antwortoption C": "Ein Akteur wird grundsätzlich als Ellipse dargestellt.",
+        "Antwortoption D": "Unter einem Strichmännchen kann die Bezeichnung des Akteurs stehen.",
+        "Korrekte-Antwort": [
+            "B",
+            "A",
+            "D"
+        ],
+        "Erklärung": "Ein Akteur wird im Use-Case-Diagramm typischerweise als Strichmännchen dargestellt. Er repräsentiert eine Rolle, die mit dem System interagiert und außerhalb der Systemgrenze liegt."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen zur Darstellung eines Use Cases sind korrekt?",
+        "Antwortoption A": "Ein Use Case wird als Ellipse dargestellt.",
+        "Antwortoption B": "Innerhalb oder an der Ellipse steht die Bezeichnung des Use Cases.",
+        "Antwortoption C": "Ein Use Case beschreibt eine vom System bereitgestellte Funktionalität.",
+        "Antwortoption D": "Ein Use Case wird grundsätzlich durch ein Strichmännchen dargestellt.",
+        "Korrekte-Antwort": [
+            "C",
+            "B",
+            "A"
+        ],
+        "Erklärung": "Ein Use Case wird als Ellipse dargestellt und mit einer Bezeichnung versehen. Er beschreibt eine Funktionalität bzw. einen Anwendungsfall des Systems."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen zur Systemgrenze sind richtig?",
+        "Antwortoption A": "Die Systemgrenze wird als Rechteck dargestellt.",
+        "Antwortoption B": "Use Cases befinden sich innerhalb der Systemgrenze.",
+        "Antwortoption C": "Akteure befinden sich normalerweise außerhalb der Systemgrenze.",
+        "Antwortoption D": "Die Systemgrenze wird als Strichmännchen dargestellt.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C"
+        ],
+        "Erklärung": "Die Systemgrenze grenzt das betrachtete System nach außen ab und wird als Rechteck dargestellt. Use Cases liegen innerhalb, Akteure außerhalb."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen zur grafischen Darstellung einer Assoziation sind korrekt?",
+        "Antwortoption A": "Eine Assoziation wird als Verbindung zwischen zwei Elementen dargestellt.",
+        "Antwortoption B": "Eine normale Assoziation verwendet das Stereotyp «include».",
+        "Antwortoption C": "Eine Assoziation wird typischerweise als durchgezogene Linie dargestellt.",
+        "Antwortoption D": "Sie kann beispielsweise einen Akteur mit einem Use Case verbinden.",
+        "Korrekte-Antwort": [
+            "A",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Die Assoziation zwischen Akteur und Use Case wird als durchgezogene Linie dargestellt. Sie zeigt, dass der Akteur mit dem Use Case interagiert."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen zur grafischen Darstellung von include sind richtig?",
+        "Antwortoption A": "include wird mit einer gestrichelten Linie dargestellt.",
+        "Antwortoption B": "Die Beziehung trägt das Stereotyp «include».",
+        "Antwortoption C": "include wird mit einer durchgezogenen Linie ohne Pfeil dargestellt.",
+        "Antwortoption D": "Die Pfeilspitze zeigt vom einbindenden zum inkludierten Use Case.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "D"
+        ],
+        "Erklärung": "Eine include-Beziehung wird als gestrichelte Linie mit offenem Pfeil und dem Stereotyp «include» dargestellt. Der Pfeil zeigt zum inkludierten Use Case."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen zur grafischen Darstellung von extend sind korrekt?",
+        "Antwortoption A": "extend wird mit einer gestrichelten Linie dargestellt.",
+        "Antwortoption B": "Die Beziehung wird mit dem Stereotyp «extend» gekennzeichnet.",
+        "Antwortoption C": "Der Pfeil zeigt vom erweiternden zum erweiterten Use Case.",
+        "Antwortoption D": "Die Beziehung besitzt eine offene Pfeilspitze.",
+        "Korrekte-Antwort": [
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Eine extend-Beziehung wird als gestrichelte Linie mit offenem Pfeil und dem Stereotyp «extend» dargestellt. Der Pfeil zeigt auf den erweiterten bzw. ursprünglichen Use Case."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen zur grafischen Darstellung von Vererbung sind richtig?",
+        "Antwortoption A": "Vererbung wird mit einer durchgezogenen Linie dargestellt.",
+        "Antwortoption B": "Die Generalisierung verwendet eine hohle Dreieckspfeilspitze.",
+        "Antwortoption C": "Die Pfeilspitze zeigt auf das allgemeine Element.",
+        "Antwortoption D": "Vererbung wird durch das Stereotyp «include» gekennzeichnet.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "D"
+        ],
+        "Erklärung": "Die Generalisierung wird mit einer durchgezogenen Linie und einer hohlen Dreieckspitze dargestellt. Sie verwendet nicht das Stereotyp «include»."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen unterscheiden eine Assoziation grafisch von einer include-Beziehung?",
+        "Antwortoption A": "Eine Assoziation wird normalerweise durch eine durchgezogene Linie dargestellt.",
+        "Antwortoption B": "include wird durch eine gestrichelte Linie mit Pfeil dargestellt.",
+        "Antwortoption C": "Eine Assoziation trägt grundsätzlich das Stereotyp «include».",
+        "Antwortoption D": "include wird mit dem Stereotyp «include» gekennzeichnet.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "D"
+        ],
+        "Erklärung": "Die normale Assoziation wird als durchgezogene Linie dargestellt. include verwendet dagegen eine gestrichelte Linie mit offenem Pfeil und dem Stereotyp «include»."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen unterscheiden include und extend grafisch korrekt?",
+        "Antwortoption A": "include verwendet das Stereotyp «include».",
+        "Antwortoption B": "extend verwendet das Stereotyp «include».",
+        "Antwortoption C": "Beide Beziehungen werden mit gestrichelten Linien und offenen Pfeilspitzen dargestellt.",
+        "Antwortoption D": "Die Stereotypen «include» und «extend» unterscheiden die beiden Beziehungen.",
+        "Korrekte-Antwort": [
+            "C",
+            "D",
+            "A"
+        ],
+        "Erklärung": "Include und extend sehen sich grafisch ähnlich: Beide verwenden gestrichelte Linien mit offenen Pfeilspitzen. Sie werden durch unterschiedliche Stereotypen unterschieden."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen helfen dabei, Vererbung und Implementierung grafisch zu unterscheiden?",
+        "Antwortoption A": "Eine Generalisierung verwendet eine durchgezogene Linie mit hohler Dreieckspitze.",
+        "Antwortoption B": "Eine Generalisierung verwendet typischerweise das Stereotyp «include».",
+        "Antwortoption C": "Die Generalisierung zeigt auf das allgemeinere Element.",
+        "Antwortoption D": "Eine Implementierung wird in UML typischerweise durch eine gestrichelte Linie mit hohler Dreieckspitze dargestellt.",
+        "Korrekte-Antwort": [
+            "B",
+            "A",
+            "D"
+        ],
+        "Erklärung": "Generalisierung und Realisierung/Implementierung können ähnlich aussehen, unterscheiden sich aber unter anderem durch die Linienart. Generalisierung verwendet eine durchgezogene Linie, Implementierung eine gestrichelte Linie, jeweils mit hohler Dreieckspitze."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Elemente gehören zu den wesentlichen Bestandteilen eines Use-Case-Diagramms?",
+        "Antwortoption A": "Akteure gehören zu den grundlegenden Elementen eines Use-Case-Diagramms.",
+        "Antwortoption B": "Use Cases gehören zu den grundlegenden Elementen eines Use-Case-Diagramms.",
+        "Antwortoption C": "Die Systemgrenze gehört zu den wesentlichen Bestandteilen.",
+        "Antwortoption D": "Eine Datenbanktabelle ist zwingend Bestandteil jedes Use-Case-Diagramms.",
+        "Korrekte-Antwort": [
+            "C",
+            "B",
+            "A"
+        ],
+        "Erklärung": "Zu den wesentlichen Bestandteilen gehören Akteure, Use Cases und die Systemgrenze. Zusätzlich können verschiedene Beziehungen zwischen den Elementen dargestellt werden."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen beschreiben den Aufbau eines vollständigen Use-Case-Diagramms korrekt?",
+        "Antwortoption A": "Die Systemgrenze umfasst die zum System gehörenden Use Cases.",
+        "Antwortoption B": "Akteure werden außerhalb der Systemgrenze dargestellt.",
+        "Antwortoption C": "Use Cases werden innerhalb der Systemgrenze als Ellipsen dargestellt.",
+        "Antwortoption D": "Alle Akteure müssen innerhalb der Systemgrenze stehen.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C"
+        ],
+        "Erklärung": "Ein vollständiges Use-Case-Diagramm zeigt das System als Systemgrenze, die darin enthaltenen Use Cases und die außerhalb dargestellten Akteure. Beziehungen machen die Interaktionen und Abhängigkeiten sichtbar."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen beschreiben das Zusammenspiel von Akteur, Use Case und Systemgrenze korrekt?",
+        "Antwortoption A": "Der Akteur steht für eine Rolle, die mit dem System interagiert.",
+        "Antwortoption B": "Der Use Case beschreibt eine vom System bereitgestellte Funktionalität.",
+        "Antwortoption C": "Die Systemgrenze zeigt, welche Funktionalitäten zum betrachteten System gehören.",
+        "Antwortoption D": "Der Akteur muss immer innerhalb der Systemgrenze liegen.",
+        "Korrekte-Antwort": [
+            "A",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Akteure interagieren mit dem System, Use Cases beschreiben dessen Funktionalitäten und die Systemgrenze grenzt das betrachtete System ab. Akteure werden normalerweise außerhalb der Systemgrenze dargestellt."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen zu den verschiedenen Beziehungen in einem Use-Case-Diagramm sind richtig?",
+        "Antwortoption A": "Eine Assoziation kann die Interaktion zwischen Akteur und Use Case darstellen.",
+        "Antwortoption B": "include beschreibt die Einbeziehung eines weiteren Use Cases.",
+        "Antwortoption C": "extend beschreibt ausschließlich eine Vererbung zwischen zwei Akteuren.",
+        "Antwortoption D": "Generalisierung kann eine Beziehung zwischen einem speziellen und einem allgemeinen Element darstellen.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "D"
+        ],
+        "Erklärung": "Zu den wichtigen Beziehungen gehören Assoziation, include, extend und Generalisierung. Sie erfüllen unterschiedliche Aufgaben und werden grafisch unterschiedlich dargestellt."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Beziehungen können zwischen Use Cases in einem Use-Case-Diagramm vorkommen?",
+        "Antwortoption A": "Use Cases können über include miteinander verbunden werden.",
+        "Antwortoption B": "Use Cases können über extend miteinander verbunden werden.",
+        "Antwortoption C": "Use Cases können über Generalisierung miteinander verbunden werden.",
+        "Antwortoption D": "Use Cases werden grundsätzlich ausschließlich über Assoziationen verbunden.",
+        "Korrekte-Antwort": [
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Zwischen Use Cases können insbesondere include, extend und Generalisierung verwendet werden. Eine normale Assoziation beschreibt dagegen typischerweise die Interaktion eines Akteurs mit einem Use Case."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen zur Beziehung zwischen Akteur und Use Case sind korrekt?",
+        "Antwortoption A": "Die Beziehung wird normalerweise als Assoziation bezeichnet.",
+        "Antwortoption B": "Sie wird typischerweise durch eine durchgezogene Linie dargestellt.",
+        "Antwortoption C": "Sie wird immer mit dem Stereotyp «extend» gekennzeichnet.",
+        "Antwortoption D": "Sie zeigt, dass der Akteur mit der Funktionalität des Use Cases interagiert.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "D"
+        ],
+        "Erklärung": "Die Interaktion zwischen einem Akteur und einem Use Case wird durch eine Assoziation dargestellt. Grafisch handelt es sich normalerweise um eine durchgezogene Linie."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen beschreiben eine obligatorische Einbeziehung eines weiteren Use Cases?",
+        "Antwortoption A": "Dafür wird typischerweise include verwendet.",
+        "Antwortoption B": "Der eingebundene Use Case wird als Bestandteil des Basisablaufs ausgeführt.",
+        "Antwortoption C": "Die Beziehung beschreibt grundsätzlich eine optionale Erweiterung.",
+        "Antwortoption D": "include eignet sich dazu, gemeinsam benötigtes Verhalten wiederzuverwenden.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "D"
+        ],
+        "Erklärung": "include wird verwendet, wenn ein Use Case einen anderen Use Case als festen Bestandteil seines Ablaufs einbezieht. Dadurch kann gemeinsames Verhalten wiederverwendet werden."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen beschreiben eine optionale bzw. bedingte Erweiterung korrekt?",
+        "Antwortoption A": "Dafür wird typischerweise extend verwendet.",
+        "Antwortoption B": "Die Erweiterung kann abhängig von einer Situation ausgeführt werden.",
+        "Antwortoption C": "Die Erweiterung gehört zwingend zu jedem normalen Ablauf.",
+        "Antwortoption D": "Eine Condition kann festlegen, wann das zusätzliche Verhalten ausgeführt wird.",
+        "Korrekte-Antwort": [
+            "C",
+            "D",
+            "A"
+        ],
+        "Erklärung": "extend beschreibt zusätzliches Verhalten, das nicht immer ausgeführt wird. Eine Bedingung kann bestimmen, wann die Erweiterung tatsächlich erfolgt."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen beschreiben eine Generalisierung bzw. Vererbung korrekt?",
+        "Antwortoption A": "Eine Generalisierung verbindet ein spezielles mit einem allgemeineren Element.",
+        "Antwortoption B": "Die Pfeilspitze zeigt auf das allgemeinere Element.",
+        "Antwortoption C": "Die Beziehung wird durch eine hohle Dreieckspitze dargestellt.",
+        "Antwortoption D": "Generalisierung beschreibt eine obligatorische Einbeziehung wie include.",
+        "Korrekte-Antwort": [
+            "B",
+            "A",
+            "D"
+        ],
+        "Erklärung": "Generalisierung beschreibt eine Spezialisierung. Die hohle Dreieckspitze zeigt auf das allgemeine Element. Sie ist nicht mit include gleichzusetzen."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen unterscheiden Assoziation, include, extend und Vererbung korrekt?",
+        "Antwortoption A": "Eine Assoziation beschreibt typischerweise die Interaktion zwischen Akteur und Use Case.",
+        "Antwortoption B": "include beschreibt die feste Einbeziehung eines weiteren Use Cases.",
+        "Antwortoption C": "extend beschreibt eine optionale oder bedingte Erweiterung.",
+        "Antwortoption D": "Vererbung beschreibt eine Generalisierung zwischen einem speziellen und einem allgemeinen Element.",
+        "Korrekte-Antwort": [
+            "C",
+            "B",
+            "A"
+        ],
+        "Erklärung": "Die vier Beziehungen haben unterschiedliche Bedeutungen: Assoziation steht für Interaktion, include für Einbeziehung, extend für optionale Erweiterung und Generalisierung für Spezialisierung."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen beschreiben ein vollständiges Zusammenspiel der Elemente in einem Use-Case-Diagramm korrekt?",
+        "Antwortoption A": "Ein Akteur kann über eine Assoziation mit einem Use Case verbunden sein.",
+        "Antwortoption B": "Der Use Case liegt innerhalb der Systemgrenze.",
+        "Antwortoption C": "Die Systemgrenze zeigt, welche Funktionalitäten zum betrachteten System gehören.",
+        "Antwortoption D": "Ein Akteur muss innerhalb der Systemgrenze dargestellt werden.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C"
+        ],
+        "Erklärung": "Ein Akteur steht außerhalb des Systems und interagiert mit dessen Use Cases. Die Use Cases liegen innerhalb der Systemgrenze."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Begründungen dafür, ein bestimmtes Element als Akteur darzustellen, sind korrekt?",
+        "Antwortoption A": "Das Element übernimmt eine Rolle bei der Interaktion mit dem System.",
+        "Antwortoption B": "Das Element beschreibt eine Funktionalität des Systems.",
+        "Antwortoption C": "Das Element befindet sich außerhalb der betrachteten Systemgrenze.",
+        "Antwortoption D": "Das Element kann eine Person, ein anderes System oder eine andere externe Rolle repräsentieren.",
+        "Korrekte-Antwort": [
+            "A",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Ein Akteur ist eine externe Rolle, die mit dem System interagiert. Dabei kann es sich beispielsweise um einen Menschen, ein anderes System oder eine andere externe Instanz handeln."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Begründungen dafür, ein bestimmtes Element als Use Case darzustellen, sind korrekt?",
+        "Antwortoption A": "Das Element beschreibt eine Funktionalität, die das System bereitstellt.",
+        "Antwortoption B": "Das Element beschreibt einen für einen Akteur relevanten Anwendungsfall.",
+        "Antwortoption C": "Das Element muss außerhalb der Systemgrenze liegen.",
+        "Antwortoption D": "Das Element wird im Diagramm typischerweise als Ellipse dargestellt.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "D"
+        ],
+        "Erklärung": "Ein Use Case beschreibt eine für einen Akteur relevante Funktionalität des Systems. Grafisch wird er als Ellipse innerhalb der Systemgrenze dargestellt."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Begründungen dafür, einen Akteur außerhalb der Systemgrenze darzustellen, sind richtig?",
+        "Antwortoption A": "Der Akteur repräsentiert eine externe Rolle.",
+        "Antwortoption B": "Die Systemgrenze trennt das betrachtete System von seiner Umgebung.",
+        "Antwortoption C": "Der Akteur gehört nicht zu den innerhalb der Systemgrenze beschriebenen Funktionalitäten.",
+        "Antwortoption D": "Akteure müssen deshalb immer als Use Cases dargestellt werden.",
+        "Korrekte-Antwort": [
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Akteure gehören zur Umgebung des Systems. Die Systemgrenze trennt die externen Rollen von den Funktionalitäten, die das System selbst bereitstellt."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Begründungen dafür, einen Use Case innerhalb der Systemgrenze darzustellen, sind korrekt?",
+        "Antwortoption A": "Der Use Case beschreibt eine Funktionalität des betrachteten Systems.",
+        "Antwortoption B": "Die Systemgrenze umfasst die vom System bereitgestellten Use Cases.",
+        "Antwortoption C": "Ein Use Case ist grundsätzlich eine externe Rolle.",
+        "Antwortoption D": "Die Position innerhalb der Grenze macht sichtbar, dass die Funktionalität zum System gehört.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "D"
+        ],
+        "Erklärung": "Use Cases gehören zum betrachteten System und werden deshalb innerhalb der Systemgrenze dargestellt. Die Position macht die Zugehörigkeit zum System sichtbar."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Begründungen dafür, zwischen zwei Use Cases include zu verwenden, sind korrekt?",
+        "Antwortoption A": "Der zweite Use Case wird als fester Bestandteil des ersten Ablaufs benötigt.",
+        "Antwortoption B": "Das einzubindende Verhalten soll wiederverwendbar sein.",
+        "Antwortoption C": "Die Beziehung beschreibt grundsätzlich nur ein zufälliges optionales Verhalten.",
+        "Antwortoption D": "Gemeinsames Verhalten kann dadurch in einem eigenen Use Case ausgelagert werden.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "D"
+        ],
+        "Erklärung": "include eignet sich, wenn ein Verhalten verbindlich benötigt und in mehreren Use Cases wiederverwendet werden soll."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Begründungen dafür, zwischen zwei Use Cases extend zu verwenden, sind korrekt?",
+        "Antwortoption A": "Das zusätzliche Verhalten soll nur unter bestimmten Voraussetzungen auftreten.",
+        "Antwortoption B": "Das erweiternde Verhalten ist Bestandteil jedes möglichen Ablaufs.",
+        "Antwortoption C": "Eine Condition kann festlegen, wann die Erweiterung ausgeführt wird.",
+        "Antwortoption D": "Ein Extension Point kann angeben, an welcher Stelle die Erweiterung eingefügt wird.",
+        "Korrekte-Antwort": [
+            "C",
+            "D",
+            "A"
+        ],
+        "Erklärung": "extend wird für optionales oder bedingtes Zusatzverhalten verwendet. Condition und Extension Point können dabei festlegen, wann und an welcher Stelle die Erweiterung erfolgt."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen begründen die Verwendung einer Condition bei einer extend-Beziehung korrekt?",
+        "Antwortoption A": "Sie legt fest, unter welchen Voraussetzungen die Erweiterung ausgeführt wird.",
+        "Antwortoption B": "Sie macht die optionale Natur der Erweiterung nachvollziehbarer.",
+        "Antwortoption C": "Sie ersetzt grundsätzlich den Extension Point.",
+        "Antwortoption D": "Sie kann von einer bestimmten Situation oder Voraussetzung abhängig sein.",
+        "Korrekte-Antwort": [
+            "B",
+            "A",
+            "D"
+        ],
+        "Erklärung": "Die Condition beschreibt die Voraussetzung, unter der das zusätzliche Verhalten einer extend-Beziehung ausgeführt wird. Dadurch wird klar, dass die Erweiterung nicht in jedem Ablauf stattfinden muss."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen begründen die Verwendung eines Extension Points korrekt?",
+        "Antwortoption A": "Er bezeichnet eine Stelle im Basis-Use-Case, an der eine Erweiterung eingefügt werden kann.",
+        "Antwortoption B": "Er gehört zum Konzept der extend-Beziehung.",
+        "Antwortoption C": "Er beschreibt grundsätzlich den externen Akteur eines Systems.",
+        "Antwortoption D": "Er macht die vorgesehene Stelle für zusätzliches Verhalten nachvollziehbar.",
+        "Korrekte-Antwort": [
+            "C",
+            "B",
+            "A"
+        ],
+        "Erklärung": "Ein Extension Point ist eine benannte Erweiterungsstelle innerhalb des Basis-Use-Cases. Er wird im Zusammenhang mit extend verwendet."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Begründungen dafür, zwischen zwei Elementen eine Vererbungsbeziehung zu verwenden, sind korrekt?",
+        "Antwortoption A": "Ein Element stellt eine Spezialisierung eines allgemeineren Elements dar.",
+        "Antwortoption B": "Gemeinsame Eigenschaften oder Verhaltensweisen können auf einer allgemeinen Ebene zusammengefasst werden.",
+        "Antwortoption C": "Das spezielle Element kann Merkmale des allgemeinen Elements übernehmen.",
+        "Antwortoption D": "Die Beziehung bedeutet immer eine obligatorische Einbeziehung wie bei include.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C"
+        ],
+        "Erklärung": "Generalisierung wird verwendet, wenn ein Element eine speziellere Ausprägung eines allgemeineren Elements darstellt. Gemeinsame Merkmale können dabei auf der allgemeinen Ebene zusammengefasst werden."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen beschreiben eine korrekte Vorgehensweise beim Finden und Korrigieren eines Fehlers in einem Use-Case-Diagramm?",
+        "Antwortoption A": "Zuerst sollte geprüft werden, ob die verwendeten Symbole zur Bedeutung der Elemente passen.",
+        "Antwortoption B": "Danach sollte geprüft werden, ob die Beziehungen fachlich zur dargestellten Situation passen.",
+        "Antwortoption C": "Ein Fehler kann beispielsweise eine falsch dargestellte Beziehung zwischen zwei Use Cases sein.",
+        "Antwortoption D": "Eine Korrektur benötigt keine Begründung, solange das Diagramm anschließend optisch korrekt aussieht.",
+        "Korrekte-Antwort": [
+            "A",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Bei einer Klausur sollte zunächst das fehlerhafte Element oder die fehlerhafte Beziehung identifiziert werden. Anschließend wird die Darstellung fachlich korrigiert und die Korrektur begründet."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist ein Use Case?",
+        "Antwortoption A": "Ein Use Case beschreibt eine Funktionalität, die ein System für einen Akteur bereitstellt.",
+        "Antwortoption B": "Ein Use Case beschreibt einen Anwendungsfall aus Sicht eines Nutzers oder einer anderen Rolle.",
+        "Antwortoption C": "Ein Use Case beschreibt ein bestimmtes Ziel oder Ergebnis, das durch die Systemnutzung erreicht werden soll.",
+        "Antwortoption D": "Ein Use Case wird in einem Use-Case-Diagramm typischerweise als Ellipse dargestellt.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Ein Use Case beschreibt einen Anwendungsfall bzw. eine Funktionalität des Systems aus Sicht eines Akteurs. Er stellt ein Ziel oder gewünschtes Ergebnis der Interaktion dar und wird grafisch als Ellipse dargestellt."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wozu dient ein Use-Case-Diagramm?",
+        "Antwortoption A": "Es zeigt, welche Akteure mit dem System interagieren.",
+        "Antwortoption B": "Es zeigt wichtige Funktionalitäten bzw. Anwendungsfälle des Systems.",
+        "Antwortoption C": "Es stellt Beziehungen zwischen Akteuren und Use Cases sowie zwischen Use Cases dar.",
+        "Antwortoption D": "Es gibt einen verständlichen Überblick über die Anforderungen und den äußeren Systemkontext.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Ein Use-Case-Diagramm stellt die funktionalen Anforderungen eines Systems aus einer äußeren Sicht dar. Es zeigt Akteure, Use Cases, Systemgrenze und deren Beziehungen."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist ein Akteur und wie wird er dargestellt?",
+        "Antwortoption A": "Ein Akteur beschreibt eine Rolle, die mit dem System interagiert.",
+        "Antwortoption B": "Ein Akteur kann beispielsweise eine Person oder ein externes System repräsentieren.",
+        "Antwortoption C": "Ein Akteur wird typischerweise als Strichmännchen dargestellt.",
+        "Antwortoption D": "Ein Akteur befindet sich normalerweise außerhalb der Systemgrenze.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Ein Akteur ist eine externe Rolle, die mit dem betrachteten System interagiert. Er wird im Use-Case-Diagramm typischerweise als Strichmännchen dargestellt."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist eine Systemgrenze und wie wird sie dargestellt?",
+        "Antwortoption A": "Die Systemgrenze grenzt das betrachtete System von seiner Umgebung ab.",
+        "Antwortoption B": "Sie zeigt, welche Use Cases zum betrachteten System gehören.",
+        "Antwortoption C": "Die Systemgrenze wird typischerweise als Rechteck dargestellt.",
+        "Antwortoption D": "Innerhalb der Systemgrenze befinden sich die zum System gehörenden Use Cases.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Die Systemgrenze stellt den betrachteten Systemumfang dar. Sie wird als Rechteck gezeichnet und umfasst die Use Cases des Systems."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wie wird ein Use Case dargestellt und welche Bedeutung hat seine Darstellung?",
+        "Antwortoption A": "Ein Use Case wird als Ellipse dargestellt.",
+        "Antwortoption B": "Die Ellipse enthält normalerweise den Namen des Anwendungsfalls.",
+        "Antwortoption C": "Die Darstellung macht sichtbar, welche Funktionalität vom System bereitgestellt wird.",
+        "Antwortoption D": "Use Cases werden innerhalb der Systemgrenze angeordnet.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Der Use Case wird als Ellipse innerhalb der Systemgrenze dargestellt. Sein Name beschreibt die Funktionalität bzw. den Anwendungsfall."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist eine Assoziation?",
+        "Antwortoption A": "Eine Assoziation beschreibt eine Verbindung zwischen zwei Elementen.",
+        "Antwortoption B": "Sie wird im Use-Case-Diagramm typischerweise als durchgezogene Linie dargestellt.",
+        "Antwortoption C": "Sie kann beispielsweise einen Akteur mit einem Use Case verbinden.",
+        "Antwortoption D": "Sie zeigt, dass zwischen den verbundenen Elementen eine Beziehung bzw. Interaktion besteht.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Die Assoziation ist die typische Beziehung zwischen einem Akteur und einem Use Case. Sie wird als durchgezogene Linie dargestellt und zeigt eine Interaktion an."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist include?",
+        "Antwortoption A": "include beschreibt die Einbeziehung eines Use Cases in einen anderen Use Case.",
+        "Antwortoption B": "Der inkludierte Use Case wird als fester Bestandteil des Ablaufs des einbindenden Use Cases verwendet.",
+        "Antwortoption C": "include kann dazu dienen, gemeinsam benötigtes Verhalten wiederzuverwenden.",
+        "Antwortoption D": "Die Beziehung wird mit dem Stereotyp «include» gekennzeichnet und grafisch als gestrichelte Beziehung mit offenem Pfeil dargestellt.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "include wird verwendet, wenn ein Use Case einen anderen Use Case als festen Bestandteil seines Ablaufs benötigt. Dadurch kann gemeinsames Verhalten wiederverwendet werden."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist extend?",
+        "Antwortoption A": "extend beschreibt eine Erweiterung eines bestehenden Use Cases.",
+        "Antwortoption B": "Das zusätzliche Verhalten kann nur unter bestimmten Voraussetzungen ausgeführt werden.",
+        "Antwortoption C": "Die Erweiterung ist normalerweise optional und gehört nicht zwingend zu jedem Ablauf.",
+        "Antwortoption D": "Die Beziehung wird mit dem Stereotyp «extend» und einer gestrichelten Linie mit offenem Pfeil dargestellt.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "extend beschreibt optionales oder bedingtes Zusatzverhalten eines Use Cases. Die Erweiterung wird nur ausgeführt, wenn die entsprechenden Voraussetzungen erfüllt sind."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist der Unterschied zwischen include und extend?",
+        "Antwortoption A": "include beschreibt eine feste Einbeziehung, während extend eine optionale Erweiterung beschreibt.",
+        "Antwortoption B": "Bei include wird der eingebundene Use Case als Bestandteil des Ablaufs benötigt.",
+        "Antwortoption C": "Bei extend kann zusätzliches Verhalten abhängig von einer Bedingung ausgeführt werden.",
+        "Antwortoption D": "include und extend werden durch unterschiedliche Stereotypen gekennzeichnet.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Der wichtigste Unterschied ist: include steht für verbindlich eingebundenes Verhalten, extend für optionales bzw. bedingtes Zusatzverhalten."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist ein Extension Point?",
+        "Antwortoption A": "Ein Extension Point ist eine definierte Erweiterungsstelle innerhalb eines Use Cases.",
+        "Antwortoption B": "Er gibt an, an welcher Stelle zusätzliches Verhalten eingefügt werden kann.",
+        "Antwortoption C": "Ein Extension Point steht im Zusammenhang mit einer extend-Beziehung.",
+        "Antwortoption D": "Er kann dabei helfen, die Stelle einer optionalen Erweiterung eindeutig zu beschreiben.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Ein Extension Point ist eine benannte Stelle innerhalb des Basis-Use-Cases, an der ein erweiternder Use Case zusätzliches Verhalten einfügen kann."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist eine Condition im Zusammenhang mit einem Use-Case-Diagramm?",
+        "Antwortoption A": "Eine Condition beschreibt eine Bedingung für das Ausführen einer Erweiterung.",
+        "Antwortoption B": "Sie kann bestimmen, ob eine extend-Erweiterung tatsächlich ausgeführt wird.",
+        "Antwortoption C": "Sie beschreibt eine Voraussetzung, die vor der Ausführung des zusätzlichen Verhaltens erfüllt sein muss.",
+        "Antwortoption D": "Eine Condition wird deshalb insbesondere bei optionalen oder bedingten Erweiterungen verwendet.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Eine Condition ist eine Bedingung, die festlegt, wann eine extend-Erweiterung ausgeführt wird. Sie macht die Voraussetzungen für das zusätzliche Verhalten deutlich."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was ist Vererbung bzw. Generalisierung?",
+        "Antwortoption A": "Generalisierung beschreibt eine Beziehung zwischen einem allgemeinen und einem speziellen Element.",
+        "Antwortoption B": "Das spezielle Element stellt eine konkretere Ausprägung des allgemeinen Elements dar.",
+        "Antwortoption C": "Generalisierung kann gemeinsame Eigenschaften oder Verhaltensweisen auf einer allgemeinen Ebene zusammenfassen.",
+        "Antwortoption D": "Die Beziehung wird mit einer durchgezogenen Linie und einer hohlen Dreieckspitze dargestellt.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Generalisierung beschreibt eine Spezialisierungsbeziehung. Das spezielle Element übernimmt bzw. konkretisiert Eigenschaften des allgemeineren Elements. Grafisch wird die Beziehung mit einer hohlen Dreieckspitze dargestellt."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wie unterscheiden sich die Symbole der verschiedenen Beziehungen?",
+        "Antwortoption A": "Eine Assoziation wird typischerweise als durchgezogene Linie dargestellt.",
+        "Antwortoption B": "include und extend werden typischerweise mit gestrichelten Linien und offenen Pfeilspitzen dargestellt.",
+        "Antwortoption C": "include und extend werden durch die Stereotypen «include» bzw. «extend» unterschieden.",
+        "Antwortoption D": "Eine Generalisierung verwendet eine durchgezogene Linie mit einer hohlen Dreieckspitze.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Die unterschiedlichen Linienarten, Pfeilspitzen und Stereotypen helfen dabei, die Beziehungen voneinander zu unterscheiden. Besonders wichtig sind Assoziation, include, extend und Generalisierung."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Beziehungen gibt es in einem Use-Case-Diagramm?",
+        "Antwortoption A": "Eine Assoziation kann einen Akteur mit einem Use Case verbinden.",
+        "Antwortoption B": "include beschreibt die Einbeziehung eines weiteren Use Cases.",
+        "Antwortoption C": "extend beschreibt eine optionale oder bedingte Erweiterung eines Use Cases.",
+        "Antwortoption D": "Generalisierung beschreibt eine Beziehung zwischen einem speziellen und einem allgemeinen Element.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Zu den wichtigen Beziehungen gehören Assoziation, include, extend und Generalisierung. Sie haben jeweils unterschiedliche Bedeutungen und grafische Darstellungen."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wie ist ein vollständiges Use-Case-Diagramm grundsätzlich aufgebaut?",
+        "Antwortoption A": "Es enthält eine Systemgrenze, die das betrachtete System abgrenzt.",
+        "Antwortoption B": "Innerhalb der Systemgrenze befinden sich die Use Cases des Systems.",
+        "Antwortoption C": "Außerhalb der Systemgrenze werden die mit dem System interagierenden Akteure dargestellt.",
+        "Antwortoption D": "Zwischen den beteiligten Elementen können verschiedene Beziehungen dargestellt werden.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Ein vollständiges Use-Case-Diagramm zeigt das System, seine Use Cases, die externen Akteure und die Beziehungen zwischen diesen Elementen."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche drei grundlegenden grafischen Darstellungen werden für Use Case, Akteur und Systemgrenze verwendet?",
+        "Antwortoption A": "Der Use Case wird als Ellipse dargestellt.",
+        "Antwortoption B": "Der Akteur wird typischerweise als Strichmännchen dargestellt.",
+        "Antwortoption C": "Die Systemgrenze wird als Rechteck dargestellt.",
+        "Antwortoption D": "Diese drei Darstellungen bilden grundlegende Elemente eines Use-Case-Diagramms.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Die drei grundlegenden grafischen Elemente sind die Ellipse für den Use Case, das Strichmännchen für den Akteur und das Rechteck für die Systemgrenze."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen zur geometrischen Form der Systemgrenze sind richtig?",
+        "Antwortoption A": "Die Systemgrenze wird als Rechteck dargestellt.",
+        "Antwortoption B": "Das Rechteck grenzt das betrachtete System von seiner Umgebung ab.",
+        "Antwortoption C": "Die Use Cases des Systems werden innerhalb dieses Rechtecks angeordnet.",
+        "Antwortoption D": "Der Name des Systems kann innerhalb bzw. am oberen Rand des Rechtecks angegeben werden.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Die Systemgrenze ist ein Rechteck. Sie umfasst die Use Cases des Systems und kann mit dem Systemnamen beschriftet werden."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen zur geometrischen Form eines Use Cases sind richtig?",
+        "Antwortoption A": "Ein Use Case wird als Ellipse dargestellt.",
+        "Antwortoption B": "Die Ellipse enthält normalerweise die Bezeichnung des Use Cases.",
+        "Antwortoption C": "Die Ellipse befindet sich normalerweise innerhalb der Systemgrenze.",
+        "Antwortoption D": "Die Form macht sichtbar, dass es sich um einen Anwendungsfall bzw. eine Funktionalität handelt.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Use Cases werden als Ellipsen innerhalb der Systemgrenze dargestellt und mit ihrem Namen beschriftet."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen zur grafischen Darstellung eines Akteurs sind richtig?",
+        "Antwortoption A": "Ein Akteur wird typischerweise als Strichmännchen dargestellt.",
+        "Antwortoption B": "Der Akteur wird mit seiner Rolle beschriftet.",
+        "Antwortoption C": "Ein Akteur befindet sich normalerweise außerhalb der Systemgrenze.",
+        "Antwortoption D": "Die Darstellung zeigt eine externe Rolle, die mit dem System interagiert.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Das Strichmännchen symbolisiert den Akteur. Die Beschriftung nennt die Rolle, die mit dem System interagiert."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Elemente befinden sich innerhalb der Systemgrenze?",
+        "Antwortoption A": "Die Use Cases des betrachteten Systems befinden sich innerhalb der Systemgrenze.",
+        "Antwortoption B": "Funktionalitäten des betrachteten Systems werden innerhalb der Grenze dargestellt.",
+        "Antwortoption C": "Die Systemgrenze umfasst den fachlich betrachteten Systembereich.",
+        "Antwortoption D": "Beziehungen zwischen den enthaltenen Use Cases können innerhalb der Systemgrenze dargestellt werden.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Innerhalb der Systemgrenze werden die zum betrachteten System gehörenden Use Cases und deren Beziehungen dargestellt."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen darüber, was sich außerhalb der Systemgrenze befindet, sind richtig?",
+        "Antwortoption A": "Akteure werden normalerweise außerhalb der Systemgrenze dargestellt.",
+        "Antwortoption B": "Externe Systeme können als Akteure außerhalb der Systemgrenze dargestellt werden.",
+        "Antwortoption C": "Die Umgebung des betrachteten Systems wird außerhalb der Systemgrenze repräsentiert.",
+        "Antwortoption D": "Die äußere Position macht sichtbar, dass der Akteur nicht Teil der betrachteten Systemfunktionalität ist.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Außerhalb der Systemgrenze befindet sich die Umgebung des Systems. Akteure werden dort dargestellt, weil sie mit dem System interagieren, aber nicht Teil des betrachteten Systems sind."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wo wird der Systemname in einem Anwendungsfalldiagramm angegeben?",
+        "Antwortoption A": "Der Systemname wird üblicherweise an der Systemgrenze angegeben.",
+        "Antwortoption B": "Er kann innerhalb des Rechtecks der Systemgrenze stehen.",
+        "Antwortoption C": "Häufig wird der Name am oberen Rand der Systemgrenze dargestellt.",
+        "Antwortoption D": "Der Systemname bezeichnet das betrachtete System, das durch die Systemgrenze abgegrenzt wird.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Der Systemname wird an bzw. innerhalb der Systemgrenze angegeben, häufig am oberen Rand des Rechtecks. Er bezeichnet das betrachtete System."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Beispiele können Akteure in einem Use-Case-Diagramm darstellen?",
+        "Antwortoption A": "Eine Person oder Benutzerrolle kann als Akteur dargestellt werden.",
+        "Antwortoption B": "Ein externes Softwaresystem kann als Akteur dargestellt werden.",
+        "Antwortoption C": "Ein externes technisches Gerät kann eine Akteursrolle übernehmen.",
+        "Antwortoption D": "Eine Organisation oder externe Rolle kann je nach Betrachtung als Akteur auftreten.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Ein Akteur ist keine konkrete Person im engeren Sinn, sondern eine Rolle außerhalb des Systems. Diese Rolle kann beispielsweise von einer Person, einem anderen System oder einem Gerät übernommen werden."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Kann ein Akteur auch ein externes System darstellen?",
+        "Antwortoption A": "Ja, ein externes System kann als Akteur modelliert werden.",
+        "Antwortoption B": "Entscheidend ist, dass das externe System mit dem betrachteten System interagiert.",
+        "Antwortoption C": "Das externe System liegt außerhalb der Systemgrenze des betrachteten Systems.",
+        "Antwortoption D": "Ein Akteur beschreibt grundsätzlich eine externe Rolle und muss daher nicht zwingend ein Mensch sein.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Ja. Ein Akteur kann ein Mensch, ein anderes System, ein Gerät oder eine andere externe Rolle sein. Entscheidend ist die Interaktion mit dem betrachteten System."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Warum befindet sich ein Akteur außerhalb der Systemgrenze?",
+        "Antwortoption A": "Ein Akteur gehört zur Umgebung des betrachteten Systems.",
+        "Antwortoption B": "Die Systemgrenze trennt das System von externen Rollen.",
+        "Antwortoption C": "Der Akteur nutzt oder beeinflusst Funktionen des Systems von außen.",
+        "Antwortoption D": "Die Position macht die externe Rolle des Akteurs sichtbar.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Akteure gehören nicht zum betrachteten System, sondern interagieren von außen mit dessen Funktionalitäten. Deshalb werden sie außerhalb der Systemgrenze dargestellt."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Was bedeutet es, dass ein Akteur mit einem Use Case interagiert?",
+        "Antwortoption A": "Der Akteur nutzt oder startet eine vom System bereitgestellte Funktionalität.",
+        "Antwortoption B": "Der Akteur steht in einer fachlich relevanten Beziehung zum Anwendungsfall.",
+        "Antwortoption C": "Die Interaktion wird typischerweise durch eine Assoziation dargestellt.",
+        "Antwortoption D": "Die Beziehung zeigt, dass der Use Case für die Rolle des Akteurs relevant ist.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Die Interaktion bedeutet, dass der Akteur eine Funktionalität des Systems nutzt, auslöst oder mit ihr in Beziehung steht. Im Diagramm wird dies typischerweise durch eine Assoziation dargestellt."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Ordnen Sie die grundlegenden Begriffe ihrer jeweiligen Darstellung korrekt zu.",
+        "Antwortoption A": "Use Case → Ellipse",
+        "Antwortoption B": "Akteur → Strichmännchen",
+        "Antwortoption C": "Systemgrenze → Rechteck",
+        "Antwortoption D": "Diese drei Darstellungen bilden zentrale grafische Elemente eines Use-Case-Diagramms.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Der Use Case wird als Ellipse, der Akteur als Strichmännchen und die Systemgrenze als Rechteck dargestellt."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen beschreiben eine korrekte Darstellung der drei grundlegenden Bestandteile eines Anwendungsfalldiagramms?",
+        "Antwortoption A": "Ein Akteur wird als Strichmännchen außerhalb der Systemgrenze dargestellt.",
+        "Antwortoption B": "Ein Use Case wird als Ellipse innerhalb der Systemgrenze dargestellt.",
+        "Antwortoption C": "Die Systemgrenze wird als Rechteck dargestellt.",
+        "Antwortoption D": "Die drei Elemente können durch Beziehungen miteinander verbunden werden.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Die grundlegenden Bestandteile sind Akteur, Use Case und Systemgrenze. Ihre grafischen Darstellungen und ihre Positionen sind wichtige Grundlagen für die Klausur."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Wie könnte eine Systemgrenze für ein System namens „Online-Shop“ korrekt aufgebaut sein?",
+        "Antwortoption A": "Die Systemgrenze wird als Rechteck dargestellt.",
+        "Antwortoption B": "Das Rechteck wird mit „Online-Shop“ bezeichnet.",
+        "Antwortoption C": "Innerhalb der Systemgrenze befindet sich mindestens ein passender Use Case, beispielsweise „Produkte kaufen“.",
+        "Antwortoption D": "Ein Akteur wie „Kunde“ kann außerhalb der Systemgrenze dargestellt und mit dem Use Case verbunden werden.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Eine korrekte Systemgrenze für einen Online-Shop ist ein beschriftetes Rechteck. Darin liegen die Use Cases, während externe Akteure wie ein Kunde außerhalb dargestellt werden."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Aussagen gehören zu den besonders wichtigen Grundlagen für eine Use-Case-Klausur?",
+        "Antwortoption A": "Man sollte erklären können, wie ein Use Case dargestellt wird und welche Bedeutung er besitzt.",
+        "Antwortoption B": "Man sollte die Darstellung und Funktion eines Akteurs erklären können.",
+        "Antwortoption C": "Man sollte die Systemgrenze und ihren Zweck erklären können.",
+        "Antwortoption D": "Man sollte unterscheiden können, was innerhalb und außerhalb der Systemgrenze liegt.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Zu den wichtigsten Grundlagen gehören die drei Kernelemente Akteur, Use Case und Systemgrenze sowie deren Bedeutung und Position im Diagramm."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Zwischen welchen Elementen wird eine Assoziation im Use-Case-Diagramm typischerweise hergestellt?",
+        "Antwortoption A": "Eine Assoziation kann zwischen einem Akteur und einem Use Case bestehen.",
+        "Antwortoption B": "Sie stellt eine Beziehung zwischen einer externen Rolle und einer Systemfunktionalität dar.",
+        "Antwortoption C": "Die beteiligten Elemente können durch eine durchgezogene Linie verbunden werden.",
+        "Antwortoption D": "Die Assoziation zeigt, dass zwischen den Elementen eine Interaktion bzw. fachliche Verbindung besteht.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Die typische Assoziation im Use-Case-Diagramm verbindet einen Akteur mit einem Use Case. Sie wird als durchgezogene Linie dargestellt."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Welche Information vermittelt eine Assoziation über die Interaktion zwischen Akteur und Use Case?",
+        "Antwortoption A": "Sie zeigt, dass der Akteur mit dem Use Case in Beziehung steht.",
+        "Antwortoption B": "Sie macht sichtbar, dass der Use Case für den Akteur relevant ist.",
+        "Antwortoption C": "Sie stellt die Verbindung zwischen einer externen Rolle und einer Systemfunktionalität dar.",
+        "Antwortoption D": "Sie zeigt auf einer grundlegenden Ebene, dass zwischen Akteur und Systemfunktion eine Interaktion besteht.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Die Assoziation macht sichtbar, dass ein Akteur mit einer bestimmten Funktionalität des Systems interagiert. Sie beschreibt dabei die Verbindung, nicht den detaillierten Ablauf der Interaktion."
+    },
+    {
+        "ID": "",
+        "Semester": 2,
+        "Fach": "Programmiertechnik",
+        "Thema": "UML",
+        "Quiz-Möglichkeit": [
+            "MC",
+            "FC"
+        ],
+        "Frage": "Woran können Sie in einem vorgegebenen Diagramm eine Assoziation eindeutig erkennen?",
+        "Antwortoption A": "Sie wird typischerweise als durchgezogene Linie dargestellt.",
+        "Antwortoption B": "Sie verbindet häufig einen Akteur mit einem Use Case.",
+        "Antwortoption C": "Sie besitzt bei einer normalen Assoziation kein Stereotyp wie «include» oder «extend».",
+        "Antwortoption D": "Sie unterscheidet sich dadurch grafisch von den gestrichelten include- und extend-Beziehungen.",
+        "Korrekte-Antwort": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "Erklärung": "Eine normale Assoziation erkennt man typischerweise an der durchgezogenen Linie zwischen Akteur und Use Case. Sie trägt kein «include»- oder «extend»-Stereotyp."
+    }
+]

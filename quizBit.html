@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>FIAE Trainer – Dashboard</title>
+
+
+    <!-- ============================================================
+         FOOTER
+         ------------------------------------------------------------
+         Diese CSS-Datei gehört zur zentralen Footer-Struktur.
+         Sie wird auf den geschützten Hauptseiten eingebunden.
+         ============================================================ -->
+
+    <link
+        rel="stylesheet"
+        href="/footer-style.css">
+
+
+    <style>
+
+        /* ============================================================
+           GRUNDSTRUKTUR
+           ============================================================ */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        :root {
+            --card-bg: rgba(255, 255, 255, 0.94);
+            --card-a: #ffffff;
+            --card-b: #ffffff;
+            --header-bg: rgba(255, 255, 255, 0.9);
+            --theme-ring: var(--accent);
+            --menu-btn-bg: rgba(255, 255, 255, 0.9);
+            --menu-btn-fg: var(--text-main);
+            --text-main: #1f2937;
+            --text-muted: #6b7280;
+            --accent: #315efb;
+            --accent-hover: #244bd1;
+            --correct: #2e9b68;
+            --wrong: #d94b4b;
+            --border: color-mix(in srgb, var(--text-muted) 28%, transparent);
+            --disabled: color-mix(in srgb, var(--text-muted) 45%, transparent);
+            --shadow: 0 4px 22px rgba(0, 0, 0, 0.12);
+        }
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--text-main);
+            min-height: 100vh;
+            transition: color 0.25s ease;
+        }
+
+
+        /* ============================================================
+           AUTHENTICATION LOADING
+           ============================================================ */
+
+        body.auth-checking > *:not(#authLoading) {
+            visibility: hidden;
+        }
+
+
+        #authLoading {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0d1b12;
+            color: white;
+            font-size: 16px;
+            z-index: 9999;
+        }
+
+
+        body:not(.auth-checking) #authLoading {
+            display: none;
+        }
+
+
+        /* ============================================================
+           MAIN
+           ============================================================ */
+
+        main {
+            width: min(1100px, calc(100% - 40px));
+            margin: 40px auto 70px;
+        }
+
+
+        .welcome {
+            margin-bottom: 30px;
+        }
+
+
+        .welcome h1 {
+            font-size: 30px;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+
+        .welcome p {
+            color: var(--text-muted);
+        }
+
+
+        /* ============================================================
+           LEARNING CARD
+           ============================================================ */
+
+        .learning-card {
+            background: linear-gradient(135deg, var(--card-a), var(--card-b));
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+        }
+
+
+        .learning-card h2 {
+            font-size: 21px;
+            margin-bottom: 25px;
+            color: var(--text-main);
+        }
+
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+
+        select {
+            width: 100%;
+            height: 48px;
+            padding: 0 14px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--card-bg);
+            color: var(--text-main);
+            font-size: 15px;
+        }
+
+
+        select:disabled {
+            color: var(--disabled);
+            cursor: not-allowed;
+        }
+
+
+        select.invalid {
+            border: 2px solid var(--wrong);
+        }
+
+
+        .error-message {
+            display: none;
+            margin-top: 7px;
+            color: var(--wrong);
+            font-size: 13px;
+        }
+
+
+        .error-message.visible {
+            display: block;
+        }
+
+
+        /* ============================================================
+           AUSWAHL-BUTTONS (QUIZART + LERNSTAND)
+           ============================================================ */
+
+        .quiz-types {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+
+        #lernstandButtons {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+
+
+        .quiz-type {
+            min-height: 55px;
+            border: 1px solid var(--border);
+            border-radius: 9px;
+            background: var(--card-bg);
+            color: var(--text-main);
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 6px 8px;
+        }
+
+
+        .quiz-type:hover:not(:disabled) {
+            border-color: var(--accent);
+        }
+
+
+        .quiz-type.selected {
+            border: 2px solid var(--accent);
+            color: var(--accent);
+            background: color-mix(in srgb, var(--accent) 10%, transparent);
+        }
+
+
+        .quiz-type:disabled {
+            color: var(--disabled);
+            cursor: not-allowed;
+        }
+
+
+        /* ============================================================
+           LERNSTAND / AUSWAHL – LADEHINWEIS
+           ============================================================ */
+
+        #lernstandLoading,
+        #semesterLoading {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 7px;
+        }
+
+
+        /* ============================================================
+           FRAGENANZAHL-STEPPER
+           ============================================================ */
+
+        .stepper {
+            display: flex;
+            align-items: stretch;
+            width: 100%;
+            max-width: 260px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+
+        .stepper-btn {
+            width: 52px;
+            border: none;
+            background: var(--card-bg);
+            color: var(--accent);
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+
+        .stepper-btn:hover {
+            background: color-mix(in srgb, var(--accent) 12%, transparent);
+        }
+
+
+        .stepper-value {
+            flex: 1;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--text-main);
+            background: var(--card-bg);
+            border-left: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            user-select: none;
+        }
+
+
+        /* ============================================================
+           START BUTTON
+           ============================================================ */
+
+        .start-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+
+        #startQuiz {
+            width: min(220px, 100%);
+            height: 52px;
+            border: none;
+            border-radius: 9px;
+            background: var(--accent);
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+
+        #startQuiz:hover {
+            background: var(--accent-hover);
+        }
+
+
+        /* ============================================================
+           RESPONSIVE
+           ============================================================ */
+
+        @media (max-width: 700px) {
+
+            main {
+                width: calc(100% - 24px);
+                margin-top: 25px;
+            }
+
+            .learning-card {
+                padding: 20px;
+            }
+
+            .quiz-types {
+                grid-template-columns: 1fr;
+            }
+
+            #lernstandButtons {
+                grid-template-columns: 1fr;
+            }
+
+            .welcome h1 {
+                font-size: 25px;
+            }
+
+            .stepper {
+                max-width: none;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body class="theme-einhorn auth-checking">
+
+    <!-- ============================================================
+         AUTHENTICATION LOADING
+         ============================================================ -->
+    <div id="authLoading">
+        Anmeldung wird geprüft …
+    </div>
+
+    <!-- ============================================================
+         GLOBALER HEADER
+         ============================================================ -->
+    <div id="globalHeaderContainer"></div>
+
+
+    <!-- ============================================================
+         HAUPTINHALT
+         ============================================================ -->
+
+    <main>
+
+        <section class="welcome">
+            <h1 id="welcomeTitle">Willkommen zurück!</h1>
+            <p id="welcomeText">Wähle aus, was du heute lernen möchtest.</p>
+        </section>
+
+        <!-- ========================================================
+             AUSWAHL
+             ======================================================== -->
+
+        <section class="learning-card">
+
+            <h2>Auswahl</h2>
+
+            <!-- ====================================================
+                 SEMESTER
+                 ----------------------------------------------------
+                 Wird NICHT mehr statisch im HTML vorgegeben, sondern
+                 beim Laden der Seite dynamisch aus den tatsächlich in
+                 Firestore ("fragen") vorhandenen Semester-Werten
+                 befüllt. Vor dem Laden ist das Feld deaktiviert.
+                 ==================================================== -->
+
+            <div class="form-group">
+
+                <label for="semester">Semester</label>
+
+                <select id="semester" disabled>
+                    <option value="">Wird geladen …</option>
+                </select>
+
+                <p id="semesterLoading" hidden>
+                    Verfügbare Semester werden geladen …
+                </p>
+
+                <div id="semesterError" class="error-message">
+                    Bitte wähle zuerst ein Semester aus.
+                </div>
+
+            </div>
+
+            <!-- ====================================================
+                 FACH
+                 ==================================================== -->
+
+            <div class="form-group">
+
+                <label for="subject">Fach</label>
+
+                <select id="subject" disabled>
+                    <option value="">Erst Semester auswählen</option>
+                </select>
+
+                <div id="subjectError" class="error-message">
+                    Bitte wähle zuerst ein Fach aus.
+                </div>
+
+            </div>
+
+            <!-- ====================================================
+                 THEMA
+                 ==================================================== -->
+
+            <div class="form-group">
+
+                <label for="topic">Thema</label>
+
+                <select id="topic" disabled>
+                    <option value="">Erst Fach auswählen</option>
+                </select>
+
+                <div id="topicError" class="error-message">
+                    Bitte wähle zuerst ein Thema aus.
+                </div>
+
+            </div>
+
+            <!-- ====================================================
+                 LERNSTAND (nur sichtbar nach Themenwahl)
+                 ==================================================== -->
+
+            <div class="form-group" id="lernstandGroup" hidden>
+
+                <label>Welche Fragen möchtest du üben?</label>
+
+                <p id="lernstandLoading" hidden>Lernstand wird geladen …</p>
+
+                <div class="quiz-types" id="lernstandButtons">
+                    <button class="quiz-type" data-category="neu" disabled>Neue Fragen</button>
+                    <button class="quiz-type" data-category="hoch" disabled>Lernbedarf hoch</button>
+                    <button class="quiz-type" data-category="medium" disabled>Lernbedarf medium</button>
+                    <button class="quiz-type" data-category="gering" disabled>Lernbedarf gering</button>
+                    <button class="quiz-type" data-category="gemischt" disabled>Gemischte Fragen</button>
+                </div>
+
+                <div id="lernstandError" class="error-message">
+                    Bitte wähle aus, welche Fragen du üben möchtest.
+                </div>
+
+            </div>
+
+            <!-- ====================================================
+                 FRAGENANZAHL
+                 ==================================================== -->
+
+            <div class="form-group">
+
+                <label id="questionCountLabel" for="questionCountValue">Wie viele Fragen bearbeiten?</label>
+
+                <div class="stepper">
+                    <button type="button" class="stepper-btn" id="questionCountDown" aria-label="Weniger Fragen">−</button>
+                    <div class="stepper-value" id="questionCountValue" role="spinbutton"
+                        aria-labelledby="questionCountLabel" aria-valuemin="5" aria-valuemax="40"
+                        aria-valuenow="10">10</div>
+                    <button type="button" class="stepper-btn" id="questionCountUp" aria-label="Mehr Fragen">+</button>
+                </div>
+
+            </div>
+
+            <!-- ====================================================
+                 QUIZART
+                 ==================================================== -->
+
+            <div class="form-group">
+
+                <label>Quizart</label>
+
+                <div class="quiz-types">
+                    <button class="quiz-type" data-type="multiple-choice">Multiple Choice</button>
+                    <button class="quiz-type" data-type="flashcards">Flashcards</button>
+                    <button class="quiz-type" data-type="input">Benutzer-Eingabe</button>
+                </div>
+
+                <div id="quizTypeError" class="error-message">
+                    Bitte wähle eine Quizart aus.
+                </div>
+
+            </div>
+
+            <!-- ====================================================
+                 START
+                 ==================================================== -->
+
+            <div class="start-container">
+                <button id="startQuiz">QUIZ STARTEN</button>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+
+    <footer id="siteFooter">
+        <!-- Der bestehende Footer wird über footer-app.js aufgebaut. -->
+    </footer>
+
+
+    <!-- ============================================================
+         FIREBASE / DASHBOARD
+         ------------------------------------------------------------
+         firebase-config.js enthält ausschließlich die zentrale
+         Firebase-Konfiguration.
+
+         Firebase Authentication wird hier für das geschützte
+         Dashboard verwendet.
+
+         Firestore wird verwendet, um:
+             - beim Laden der Seite EINMAL alle Dokumente aus der
+               Collection "fragen" zu holen und daraus einen Baum
+               Semester → Fach → Thema aufzubauen. Semester-, Fach-
+               und Thema-Auswahl zeigen dadurch ausschließlich Werte,
+               die tatsächlich in der Datenbank existieren.
+             - nach Themenwahl die Statistik der Nutzerin zu den
+               passenden Fragen zu lesen und die 5 Lernstand-Buttons
+               entsprechend freizuschalten.
+
+         Feldnamen in "fragen" (siehe Datenstruktur-Vorgabe):
+             Semester, Fach, Thema, "Quiz-Möglichkeit", Frage,
+             "Antwortoption A"–D, "Korrekte-Antwort", Erklärung,
+             Eingabe.
+         ============================================================ -->
+
+    <script type="module">
+
+        /* ============================================================
+           GLOBALEN HEADER LADEN
+           ============================================================ */
+
+        async function loadGlobalHeader() {
+
+            try {
+
+                const response = await fetch("header-global.html");
+
+                if (!response.ok) {
+                    throw new Error("header-global.html konnte nicht geladen werden.");
+                }
+
+                const headerHtml = await response.text();
+                const parser = new DOMParser();
+                const headerDocument = parser.parseFromString(headerHtml, "text/html");
+                const container = document.getElementById("globalHeaderContainer");
+
+                headerDocument.querySelectorAll("style").forEach((styleElement) => {
+                    const style = document.createElement("style");
+                    style.textContent = styleElement.textContent;
+                    document.head.appendChild(style);
+                });
+
+                Array.from(headerDocument.body.children).forEach((element) => {
+                    if (element.tagName !== "SCRIPT") {
+                        container.appendChild(document.importNode(element, true));
+                    }
+                });
+
+                headerDocument.querySelectorAll("script").forEach((scriptElement) => {
+                    const script = document.createElement("script");
+                    if (scriptElement.src) {
+                        script.src = scriptElement.src;
+                    } else {
+                        script.textContent = scriptElement.textContent;
+                    }
+                    document.body.appendChild(script);
+                });
+
+            } catch (error) {
+                console.error("Globaler Header konnte nicht geladen werden:", error);
+            }
+
+        }
+
+        await loadGlobalHeader();
+
+
+        /* ============================================================
+           FIREBASE IMPORTS
+           ============================================================ */
+
+        import {
+            initializeApp
+        } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+
+        import {
+            getAuth,
+            onAuthStateChanged,
+            signOut
+        } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
+        import {
+            getFirestore,
+            collection,
+            query,
+            where,
+            getDocs,
+            doc,
+            getDoc
+        } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
+
+        import {
+            firebaseConfig
+        } from "./firebase-config.js";
+
+
+        /* ============================================================
+           FIREBASE INITIALISIEREN
+           ============================================================ */
+
+        const firebaseApp = initializeApp(firebaseConfig);
+        const auth = getAuth(firebaseApp);
+        const db = getFirestore(firebaseApp);
+
+        // Name der Firestore-Collection. Muss mit dem Import-Skript
+        // (db.collection("fragen")) übereinstimmen.
+        const FRAGEN_COLLECTION = "fragen";
+
+
+        /* ============================================================
+           ELEMENTE
+           ============================================================ */
+
+        const welcomeTitle = document.getElementById("welcomeTitle");
+
+        const semesterSelect = document.getElementById("semester");
+        const semesterLoading = document.getElementById("semesterLoading");
+        const semesterError = document.getElementById("semesterError");
+
+        const subjectSelect = document.getElementById("subject");
+        const topicSelect = document.getElementById("topic");
+
+        const startQuiz = document.getElementById("startQuiz");
+
+        const quizTypeButtons = document.querySelectorAll(".quiz-types .quiz-type[data-type]");
+
+        const lernstandGroup = document.getElementById("lernstandGroup");
+        const lernstandLoading = document.getElementById("lernstandLoading");
+        const lernstandButtons = document.querySelectorAll("#lernstandButtons .quiz-type");
+        const lernstandError = document.getElementById("lernstandError");
+
+
+        /* ============================================================
+           FIREBASE AUTHENTICATION GUARD
+           ============================================================ */
+
+        onAuthStateChanged(auth, (user) => {
+
+            if (!user) {
+                window.location.replace("login.html");
+                return;
+            }
+
+            document.body.classList.remove("auth-checking");
+
+            if (user.email) {
+                welcomeTitle.textContent = "Willkommen zurück!";
+            }
+
+            // Erst nach erfolgreichem Login den Auswahl-Baum laden.
+            initAuswahl();
+
+        });
+
+
+        /* ============================================================
+           AUSWAHL-BAUM AUS FIRESTORE
+           ------------------------------------------------------------
+           Ersetzt die frühere fest codierte Testdaten-Struktur
+           (learningData / semesterSubjects). Baut aus ALLEN Dokumenten
+           der Collection "fragen" einmalig einen Baum:
+
+               { semesterKey: { rohSemester, faecher: { fach: Set(thema) } } }
+
+           semesterKey ist immer ein String (Select-Werte sind Strings),
+           rohSemester behält den Original-Typ aus Firestore (z. B.
+           Zahl 2), damit spätere where()-Abfragen exakt zum
+           gespeicherten Feldtyp passen.
+           ============================================================ */
+
+        let fragenBaum = {};
+
+
+        async function ladeFragenBaum() {
+
+            const baum = {};
+
+            const snapshot = await getDocs(collection(db, FRAGEN_COLLECTION));
+
+            snapshot.forEach((docSnap) => {
+
+                const daten = docSnap.data();
+
+                const rohSemester = daten["Semester"];
+                const fach = daten["Fach"];
+                const thema = daten["Thema"];
+
+                if (rohSemester === undefined || rohSemester === null || !fach || !thema) {
+                    return;
+                }
+
+                const semesterKey = String(rohSemester);
+
+                if (!baum[semesterKey]) {
+                    baum[semesterKey] = {
+                        rohSemester,
+                        faecher: {}
+                    };
+                }
+
+                if (!baum[semesterKey].faecher[fach]) {
+                    baum[semesterKey].faecher[fach] = new Set();
+                }
+
+                baum[semesterKey].faecher[fach].add(thema);
+
+            });
+
+            return baum;
+
+        }
+
+
+        function sortiereSemesterKeys(keys) {
+
+            return keys.sort((a, b) => {
+
+                const aNum = Number(a);
+                const bNum = Number(b);
+                const aIstZahl = !Number.isNaN(aNum);
+                const bIstZahl = !Number.isNaN(bNum);
+
+                if (aIstZahl && bIstZahl) return aNum - bNum;
+                if (aIstZahl) return -1;
+                if (bIstZahl) return 1;
+
+                return a.localeCompare(b, "de");
+
+            });
+
+        }
+
+
+        function befuelleSemesterSelect() {
+
+            semesterSelect.innerHTML = '<option value="">Semester auswählen</option>';
+
+            const semesterKeys = sortiereSemesterKeys(Object.keys(fragenBaum));
+
+            semesterKeys.forEach((semesterKey) => {
+
+                const option = document.createElement("option");
+                option.value = semesterKey;
+                option.textContent = semesterKey === "extra"
+                    ? "Extra"
+                    : `${semesterKey}. Semester`;
+
+                semesterSelect.appendChild(option);
+
+            });
+
+            semesterSelect.disabled = semesterKeys.length === 0;
+
+        }
+
+
+        async function initAuswahl() {
+
+            semesterLoading.hidden = false;
+            semesterSelect.disabled = true;
+
+            try {
+
+                fragenBaum = await ladeFragenBaum();
+                befuelleSemesterSelect();
+
+            } catch (error) {
+
+                console.error("Auswahl konnte nicht aus der Datenbank geladen werden:", error);
+                semesterSelect.innerHTML = '<option value="">Fehler beim Laden</option>';
+
+            } finally {
+
+                semesterLoading.hidden = true;
+
+            }
+
+        }
+
+
+        /* ============================================================
+           SEMESTER → FÄCHER
+           ============================================================ */
+
+        semesterSelect.addEventListener("change", () => {
+
+            const semesterKey = semesterSelect.value;
+
+            subjectSelect.innerHTML = '<option value="">Fach auswählen</option>';
+            topicSelect.innerHTML = '<option value="">Erst Fach auswählen</option>';
+            topicSelect.disabled = true;
+
+            verstecktLernstand();
+
+            if (!semesterKey || !fragenBaum[semesterKey]) {
+                subjectSelect.disabled = true;
+                return;
+            }
+
+            subjectSelect.disabled = false;
+
+            const faecher = Object.keys(fragenBaum[semesterKey].faecher)
+                .sort((a, b) => a.localeCompare(b, "de"));
+
+            faecher.forEach((fach) => {
+                const option = document.createElement("option");
+                option.value = fach;
+                option.textContent = fach;
+                subjectSelect.appendChild(option);
+            });
+
+        });
+
+
+        /* ============================================================
+           FACH → THEMEN
+           ============================================================ */
+
+        subjectSelect.addEventListener("change", () => {
+
+            const semesterKey = semesterSelect.value;
+            const fach = subjectSelect.value;
+
+            topicSelect.innerHTML = '<option value="">Thema auswählen</option>';
+
+            verstecktLernstand();
+
+            const themenSet = fragenBaum[semesterKey]?.faecher?.[fach];
+
+            if (!fach || !themenSet) {
+                topicSelect.disabled = true;
+                return;
+            }
+
+            topicSelect.disabled = false;
+
+            const themen = Array.from(themenSet).sort((a, b) => a.localeCompare(b, "de"));
+
+            themen.forEach((thema) => {
+                const option = document.createElement("option");
+                option.value = thema;
+                option.textContent = thema;
+                topicSelect.appendChild(option);
+            });
+
+        });
+
+
+        /* ============================================================
+           THEMA → LERNSTAND LADEN
+           ============================================================ */
+
+        topicSelect.addEventListener("change", async () => {
+
+            const thema = topicSelect.value;
+
+            if (!thema) {
+                verstecktLernstand();
+                return;
+            }
+
+            lernstandGroup.hidden = false;
+
+            const semesterKey = semesterSelect.value;
+            const rohSemester = fragenBaum[semesterKey]?.rohSemester;
+
+            await ladeLernstand(rohSemester, subjectSelect.value, thema);
+
+        });
+
+
+        /* ============================================================
+           LERNSTAND VERSTECKEN / ZURÜCKSETZEN
+           ============================================================ */
+
+        let selectedCategory = null;
+
+        let currentQuestionIds = {
+            neu: [],
+            hoch: [],
+            medium: [],
+            gering: []
+        };
+
+
+        function verstecktLernstand() {
+
+            lernstandGroup.hidden = true;
+            selectedCategory = null;
+
+            lernstandButtons.forEach((button) => {
+                button.classList.remove("selected");
+                button.disabled = true;
+            });
+
+            lernstandError.classList.remove("visible");
+
+        }
+
+
+        /* ============================================================
+           MISCHEN (FISHER-YATES)
+           ============================================================ */
+
+        function mischeZufaellig(array) {
+
+            const kopie = [...array];
+
+            for (let i = kopie.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [kopie[i], kopie[j]] = [kopie[j], kopie[i]];
+            }
+
+            return kopie;
+
+        }
+
+
+        /* ============================================================
+           VERTEILUNG FÜR "GEMISCHTE FRAGEN"
+           ============================================================ */
+
+        function verteileGemischt(kategorien, gewuenschteAnzahl) {
+
+            const aktiveKategorien = Object.values(kategorien).filter((arr) => arr.length > 0);
+            const anzahlKategorien = aktiveKategorien.length;
+
+            if (anzahlKategorien === 0) {
+                return [];
+            }
+
+            let ausgewaehlt = [];
+            let rest = gewuenschteAnzahl;
+
+            const proKategorie = Math.floor(gewuenschteAnzahl / anzahlKategorien);
+
+            aktiveKategorien.forEach((pool) => {
+                const genommen = mischeZufaellig(pool).slice(0, proKategorie);
+                ausgewaehlt.push(...genommen);
+                rest -= genommen.length;
+            });
+
+            if (rest > 0) {
+                const restPool = aktiveKategorien.flatMap(
+                    (pool) => pool.filter((f) => !ausgewaehlt.includes(f))
+                );
+                ausgewaehlt.push(...mischeZufaellig(restPool).slice(0, rest));
+            }
+
+            return mischeZufaellig(ausgewaehlt);
+
+        }
+
+
+        /* ============================================================
+           FRAGENAUSWAHL FÜR DEN QUIZ-START
+           ============================================================ */
+
+        function ermittleQuestionIds(kategorie, gewuenschteAnzahl) {
+
+            if (kategorie === "gemischt") {
+                return verteileGemischt(currentQuestionIds, gewuenschteAnzahl);
+            }
+
+            return mischeZufaellig(currentQuestionIds[kategorie]).slice(0, gewuenschteAnzahl);
+
+        }
+
+
+        /* ============================================================
+           LERNSTAND LADEN
+           ------------------------------------------------------------
+           Nutzt jetzt die Collection "fragen" (statt "questions") und
+           die tatsächlichen Feldnamen "Semester", "Fach", "Thema".
+           "semester" wird hier mit dem in Firestore gespeicherten
+           Original-Typ (z. B. Zahl) übergeben, siehe rohSemester
+           weiter oben.
+           ============================================================ */
+
+        async function ladeLernstand(semester, subject, topic) {
+
+            currentQuestionIds = {
+                neu: [],
+                hoch: [],
+                medium: [],
+                gering: []
+            };
+
+            selectedCategory = null;
+
+            lernstandButtons.forEach((button) => {
+                button.classList.remove("selected");
+                button.disabled = true;
+            });
+
+            lernstandError.classList.remove("visible");
+
+            const user = auth.currentUser;
+
+            if (!user || semester === undefined) {
+                return;
+            }
+
+            lernstandLoading.hidden = false;
+
+            try {
+
+                const fragenQuery = query(
+                    collection(db, FRAGEN_COLLECTION),
+                    where("Semester", "==", semester),
+                    where("Fach", "==", subject),
+                    where("Thema", "==", topic)
+                );
+
+                const fragenSnapshot = await getDocs(fragenQuery);
+
+                for (const fragenDoc of fragenSnapshot.docs) {
+
+                    const questionId = fragenDoc.id;
+
+                    const statsRef = doc(db, "users", user.uid, "questionStats", questionId);
+                    const statsSnap = await getDoc(statsRef);
+
+                    if (!statsSnap.exists() || statsSnap.data().timesPlayed === 0) {
+                        currentQuestionIds.neu.push(questionId);
+                        continue;
+                    }
+
+                    const { timesPlayed, timesWrong } = statsSnap.data();
+                    const wrongPercent = (timesWrong / timesPlayed) * 100;
+
+                    if (wrongPercent >= 70) {
+                        currentQuestionIds.hoch.push(questionId);
+                    } else if (wrongPercent >= 30) {
+                        currentQuestionIds.medium.push(questionId);
+                    } else {
+                        currentQuestionIds.gering.push(questionId);
+                    }
+
+                }
+
+                const gesamtAnzahl =
+                    currentQuestionIds.neu.length +
+                    currentQuestionIds.hoch.length +
+                    currentQuestionIds.medium.length +
+                    currentQuestionIds.gering.length;
+
+                lernstandButtons.forEach((button) => {
+
+                    const kategorie = button.dataset.category;
+
+                    if (kategorie === "gemischt") {
+                        button.disabled = gesamtAnzahl === 0;
+                    } else {
+                        button.disabled = currentQuestionIds[kategorie].length === 0;
+                    }
+
+                });
+
+            } catch (error) {
+
+                console.error("Lernstand konnte nicht geladen werden:", error);
+
+            } finally {
+
+                lernstandLoading.hidden = true;
+
+            }
+
+        }
+
+
+        /* ============================================================
+           LERNSTAND-AUSWAHL PER KLICK
+           ============================================================ */
+
+        lernstandButtons.forEach((button) => {
+
+            button.addEventListener("click", () => {
+
+                if (button.disabled) {
+                    return;
+                }
+
+                lernstandButtons.forEach((btn) => btn.classList.remove("selected"));
+                button.classList.add("selected");
+
+                selectedCategory = button.dataset.category;
+
+                lernstandError.classList.remove("visible");
+
+            });
+
+        });
+
+
+        /* ============================================================
+           QUIZART
+           ============================================================ */
+
+        let selectedQuizType = null;
+
+        quizTypeButtons.forEach((button) => {
+
+            button.addEventListener("click", () => {
+
+                quizTypeButtons.forEach((btn) => btn.classList.remove("selected"));
+                button.classList.add("selected");
+
+                selectedQuizType = button.dataset.type;
+
+            });
+
+        });
+
+
+        /* ============================================================
+           FRAGENANZAHL
+           ============================================================ */
+
+        const questionCounts = [5, 10, 15, 20, 25, 30, 35, 40];
+
+        let questionCountIndex = questionCounts.indexOf(10);
+
+        const questionCountValue = document.getElementById("questionCountValue");
+        const questionCountUp = document.getElementById("questionCountUp");
+        const questionCountDown = document.getElementById("questionCountDown");
+
+
+        function renderQuestionCount() {
+
+            const value = questionCounts[questionCountIndex];
+
+            questionCountValue.textContent = value;
+            questionCountValue.setAttribute("aria-valuenow", value);
+
+        }
+
+
+        questionCountUp.addEventListener("click", () => {
+            questionCountIndex = (questionCountIndex + 1) % questionCounts.length;
+            renderQuestionCount();
+        });
+
+
+        questionCountDown.addEventListener("click", () => {
+            questionCountIndex = (questionCountIndex - 1 + questionCounts.length) % questionCounts.length;
+            renderQuestionCount();
+        });
+
+
+        /* ============================================================
+           QUIZ STARTEN
+           ============================================================ */
+
+        startQuiz.addEventListener("click", () => {
+
+            let valid = true;
+
+            if (!semesterSelect.value) {
+                semesterSelect.classList.add("invalid");
+                semesterError.classList.add("visible");
+                valid = false;
+            } else {
+                semesterSelect.classList.remove("invalid");
+                semesterError.classList.remove("visible");
+            }
+
+            if (!subjectSelect.value) {
+                subjectSelect.classList.add("invalid");
+                document.getElementById("subjectError").classList.add("visible");
+                valid = false;
+            } else {
+                subjectSelect.classList.remove("invalid");
+                document.getElementById("subjectError").classList.remove("visible");
+            }
+
+            if (!topicSelect.value) {
+                topicSelect.classList.add("invalid");
+                document.getElementById("topicError").classList.add("visible");
+                valid = false;
+            } else {
+                topicSelect.classList.remove("invalid");
+                document.getElementById("topicError").classList.remove("visible");
+            }
+
+            if (!selectedCategory) {
+                lernstandError.classList.add("visible");
+                valid = false;
+            } else {
+                lernstandError.classList.remove("visible");
+            }
+
+            if (!selectedQuizType) {
+                document.getElementById("quizTypeError").classList.add("visible");
+                valid = false;
+            } else {
+                document.getElementById("quizTypeError").classList.remove("visible");
+            }
+
+            if (!valid) {
+                return;
+            }
+
+            const gewuenschteAnzahl = questionCounts[questionCountIndex];
+
+            const questionIds = ermittleQuestionIds(selectedCategory, gewuenschteAnzahl);
+
+            const quizSelection = {
+                semester: semesterSelect.value,
+                subject: subjectSelect.value,
+                topic: topicSelect.value,
+                category: selectedCategory,
+                questionCount: gewuenschteAnzahl,
+                questionIds: questionIds,
+                quizType: selectedQuizType
+            };
+
+            sessionStorage.setItem("quizSelection", JSON.stringify(quizSelection));
+
+            window.location.href = "quiz.html";
+
+        });
+
+
+        /* ============================================================
+           GLOBALER LOGOUT
+           ============================================================ */
+
+        window.addEventListener("fiaeTrainerLogout", async () => {
+
+            try {
+
+                await signOut(auth);
+                window.location.replace("login.html");
+
+            } catch (error) {
+
+                console.error("Firebase Logout fehlgeschlagen:", error);
+                alert("Der Logout konnte nicht durchgeführt werden.");
+
+            }
+
+        });
+
+    </script>
+
+
+    <!-- ============================================================
+         FOOTER-SCRIPTS
+         ============================================================ -->
+
+    <script src="/footer-config.js"></script>
+
+    <script src="/footer-app.js" defer></script>
+
+</body>
+
+</html>
