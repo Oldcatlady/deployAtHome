@@ -1031,98 +1031,86 @@
            weiter oben.
            ============================================================ */
 
-        async function ladeLernstand(semester, subject, topic) {
+       /* ============================================================
+   LERNSTAND LADEN (OPTIMIERT)
+   ------------------------------------------------------------
+   Liest alle User-Stats in EINEM Rutsch in eine Map, um das 
+   "N+1 Query Problem" zu vermeiden. Categorisierung passiert 
+   dann lokal im Speicher.
+   ============================================================ */
 
-            currentQuestionIds = {
-                neu: [],
-                hoch: [],
-                medium: [],
-                gering: []
-            };
+async function ladeLernstand(semester, subject, topic) {
 
-            selectedCategory = null;
+    currentQuestionIds = { neu: [], hoch: [], medium: [], gering: [] };
+    selectedCategory = null;
 
-            lernstandButtons.forEach((button) => {
-                button.classList.remove("selected");
-                button.disabled = true;
-            });
+    lernstandButtons.forEach((button) => {
+        button.classList.remove("selected");
+        button.disabled = true;
+    });
+    lernstandError.classList.remove("visible");
 
-            lernstandError.classList.remove("visible");
+    const user = auth.currentUser;
+    if (!user || semester === undefined) return;
 
-            const user = auth.currentUser;
+    lernstandLoading.hidden = false;
 
-            if (!user || semester === undefined) {
-                return;
+    try {
+        // 1. ALLE Statistiken des Users in einem Rutsch holen (1 Read)
+        const statsSnapshot = await getDocs(collection(db, "users", user.uid, "questionStats"));
+        const statsMap = new Map();
+        statsSnapshot.forEach((doc) => {
+            statsMap.set(doc.id, doc.data());
+        });
+
+        // 2. Die Fragen für das ausgewählte Thema holen (1 Read)
+        const fragenQuery = query(
+            collection(db, FRAGEN_COLLECTION),
+            where("Semester", "==", semester),
+            where("Fach", "==", subject),
+            where("Thema", "==", topic)
+        );
+        const fragenSnapshot = await getDocs(fragenQuery);
+
+        // 3. Categorisierung im Speicher (0 Reads, extrem schnell)
+        for (const fragenDoc of fragenSnapshot.docs) {
+            const questionId = fragenDoc.id;
+            const stats = statsMap.get(questionId);
+
+            if (!stats || stats.timesPlayed === 0) {
+                currentQuestionIds.neu.push(questionId);
+                continue;
             }
 
-            lernstandLoading.hidden = false;
+            const wrongPercent = (stats.timesWrong / stats.timesPlayed) * 100;
 
-            try {
-
-                const fragenQuery = query(
-                    collection(db, FRAGEN_COLLECTION),
-                    where("Semester", "==", semester),
-                    where("Fach", "==", subject),
-                    where("Thema", "==", topic)
-                );
-
-                const fragenSnapshot = await getDocs(fragenQuery);
-
-                for (const fragenDoc of fragenSnapshot.docs) {
-
-                    const questionId = fragenDoc.id;
-
-                    const statsRef = doc(db, "users", user.uid, "questionStats", questionId);
-                    const statsSnap = await getDoc(statsRef);
-
-                    if (!statsSnap.exists() || statsSnap.data().timesPlayed === 0) {
-                        currentQuestionIds.neu.push(questionId);
-                        continue;
-                    }
-
-                    const { timesPlayed, timesWrong } = statsSnap.data();
-                    const wrongPercent = (timesWrong / timesPlayed) * 100;
-
-                    if (wrongPercent >= 70) {
-                        currentQuestionIds.hoch.push(questionId);
-                    } else if (wrongPercent >= 30) {
-                        currentQuestionIds.medium.push(questionId);
-                    } else {
-                        currentQuestionIds.gering.push(questionId);
-                    }
-
-                }
-
-                const gesamtAnzahl =
-                    currentQuestionIds.neu.length +
-                    currentQuestionIds.hoch.length +
-                    currentQuestionIds.medium.length +
-                    currentQuestionIds.gering.length;
-
-                lernstandButtons.forEach((button) => {
-
-                    const kategorie = button.dataset.category;
-
-                    if (kategorie === "gemischt") {
-                        button.disabled = gesamtAnzahl === 0;
-                    } else {
-                        button.disabled = currentQuestionIds[kategorie].length === 0;
-                    }
-
-                });
-
-            } catch (error) {
-
-                console.error("Lernstand konnte nicht geladen werden:", error);
-
-            } finally {
-
-                lernstandLoading.hidden = true;
-
+            if (wrongPercent >= 70) {
+                currentQuestionIds.hoch.push(questionId);
+            } else if (wrongPercent >= 30) {
+                currentQuestionIds.medium.push(questionId);
+            } else {
+                currentQuestionIds.gering.push(questionId);
             }
-
         }
 
+        // 4. Buttons aktivieren/deaktivieren basierend auf Verfügbarkeit
+        const gesamtAnzahl = Object.values(currentQuestionIds).reduce((a, b) => a + b.length, 0);
+
+        lernstandButtons.forEach((button) => {
+            const kategorie = button.dataset.category;
+            if (kategorie === "gemischt") {
+                button.disabled = gesamtAnzahl === 0;
+            } else {
+                button.disabled = currentQuestionIds[kategorie].length === 0;
+            }
+        });
+
+    } catch (error) {
+        console.error("Lernstand konnte nicht geladen werden:", error);
+    } finally {
+        lernstandLoading.hidden = true;
+    }
+}
 
         /* ============================================================
            LERNSTAND-AUSWAHL PER KLICK
